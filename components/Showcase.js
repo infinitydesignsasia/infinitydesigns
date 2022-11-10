@@ -26,14 +26,14 @@ export default function Showcase() {
         return (
           <section
             key={item.id}
-            className={`flex justify-between items-center mb-32 ${
+            className={`flex justify-between items-center mt-32 ${
               item.rev ? "flex-row-reverse" : "flex-row"
             }`}>
             <div className=''>
               <img src={item.src} alt='' className='w-[550px] h-[400px] box' />
             </div>
             <div className='max-w-xl'>
-              <p className='text-[#FF9F9F] font-bold tracking-wide uppercase'>
+              <p className='text-[#FFABE1] font-bold tracking-wide uppercase'>
                 {item.category}
               </p>
               <h1 className='text-2xl font-semibold mt-2'>{item.title}</h1>

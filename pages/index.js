@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Products from "../components/Products";
 import Showcase from "../components/Showcase";
+import Testimonials from "../components/Testimonials";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <Header />
       <Hero />
       <Showcase />
+      <Products />
+      <Testimonials />
     </div>
   );
 }

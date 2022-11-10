@@ -26,18 +26,24 @@ export default function Showcase() {
         return (
           <section
             key={item.id}
-            className={`flex justify-between items-center mt-32 ${
+            className={`flex justify-between items-center flex-wrap mt-32 gap-8 ${
               item.rev ? "flex-row-reverse" : "flex-row"
             }`}>
             <div className=''>
-              <img src={item.src} alt='' className='w-[550px] h-[400px] box' />
+              <img
+                src={item.src}
+                alt=''
+                className='w-[360px] lg:w-[568px] box'
+              />
             </div>
             <div className='max-w-xl'>
               <p className='text-[#FFABE1] font-bold tracking-wide uppercase'>
                 {item.category}
               </p>
-              <h1 className='text-2xl font-semibold mt-2'>{item.title}</h1>
-              <p className='text-lg text-gray-600 mt-5'>
+              <h1 className='text-sm md:text-lg lg:text-2xl font-semibold mt-2'>
+                {item.title}
+              </h1>
+              <p className='hidden md:block md:text-sm text-gray-600 mt-5'>
                 <em>{item.description}</em>
               </p>
               <button className='text-md bg-[#B2A4FF] px-4 py-2 text-[#FFf] rounded-lg mt-5 hover:bg-[#8b78f7]'>

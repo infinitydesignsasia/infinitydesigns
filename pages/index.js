@@ -1,8 +1,11 @@
 import Head from "next/head";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Newsletter from "../components/Newsletter";
 import Products from "../components/Products";
 import Showcase from "../components/Showcase";
+import Subscribe from "../components/Subscribe";
 import Testimonials from "../components/Testimonials";
 
 export default function Home() {
@@ -19,6 +22,8 @@ export default function Home() {
       <Showcase />
       <Products />
       <Testimonials />
+      <Newsletter />
+      <Footer />
     </div>
   );
 }

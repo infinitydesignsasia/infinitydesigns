@@ -2,7 +2,7 @@
 export default function Hero() {
   return (
     <section className='h-[668px]'>
-      <div className='hero w-full h-[668px] bg-[#024EA6] bg-center bg-no-repeat bg-contain '>
+      <div className='hero w-full h-[668px] bg-center bg-no-repeat bg-contain '>
         <div className='text-white flex justify-center flex-col h-full max-w-7xl px-4 sm:px-6 mx-auto text-left'>
           <h1
             className='text-5xl md:text-6xl font-bold z-30'

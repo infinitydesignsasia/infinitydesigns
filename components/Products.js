@@ -11,7 +11,7 @@ export default function Products() {
     },
     {
       id: 3,
-      src: "/images/menwear.jpg",
+      src: "/images/menwear.JPG",
     },
     {
       id: 4,

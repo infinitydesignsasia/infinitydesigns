@@ -53,7 +53,7 @@ export default function Products() {
               key={image.id}
               src={image.src}
               alt=''
-              className='hover:scale-105 transition-all duration-300 ease-out h-full'
+              className='hover:scale-105 transition-all duration-300 ease-out md:h-full'
             />
           );
         })}

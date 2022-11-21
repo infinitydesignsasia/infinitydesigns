@@ -46,9 +46,9 @@ export default function Showcase() {
                     src='https://player.vimeo.com/video/770610537?h=d14a516ebb'
                     width='100%'
                     height='100%'
-                    frameborder='0'
+                    frameBorder='0'
                     allow='autoplay; fullscreen'
-                    allowfullscreen></iframe>
+                    allowFullScreen></iframe>
                 </div>
               )}
             </div>

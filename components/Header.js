@@ -141,7 +141,7 @@ export default function Header() {
           <div className='-my-2 -mr-2 md:hidden'>
             <Popover.Button className='inline-flex items-center justify-center rounded-md bg-[#F7F5F2] p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none'>
               <span className='sr-only'>Open menu</span>
-              <Bars3Icon className='h-6 w-6' aria-hidden='true' />
+              <Bars3Icon className='h-6 w-6' ariaHidden='true' />
             </Popover.Button>
           </div>
           <Popover.Group as='nav' className='hidden space-x-10 md:flex'>
@@ -168,7 +168,7 @@ export default function Header() {
                         open ? "text-gray-600" : "text-gray-400",
                         "ml-2 h-5 w-5 group-hover:text-gray-500"
                       )}
-                      aria-hidden='true'
+                      ariaHidden='true'
                     />
                   </Popover.Button>
 
@@ -193,7 +193,7 @@ export default function Header() {
                               className='-m-3 flex items-start rounded-lg p-3 py-2 hover:bg-gray-50'>
                               <item.icon
                                 className='h-6 w-6 flex-shrink-0 text-[#b2a4ff]'
-                                aria-hidden='true'
+                                ariaHidden='true'
                               />
                               <div className='ml-4'>
                                 <p className='text-base font-medium text-gray-900'>
@@ -234,7 +234,7 @@ export default function Header() {
                         open ? "text-gray-600" : "text-gray-400",
                         "ml-2 h-5 w-5 group-hover:text-gray-500"
                       )}
-                      aria-hidden='true'
+                      ariaHidden='true'
                     />
                   </Popover.Button>
 
@@ -259,7 +259,7 @@ export default function Header() {
                               className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'>
                               <item.icon
                                 className='h-6 w-6 flex-shrink-0 text-[#b2a4ff]'
-                                aria-hidden='true'
+                                ariaHidden='true'
                               />
                               <div className='ml-4'>
                                 <p className='text-base font-medium text-gray-900'>
@@ -298,7 +298,7 @@ export default function Header() {
                         open ? "text-gray-600" : "text-gray-400",
                         "ml-2 h-5 w-5 group-hover:text-gray-500"
                       )}
-                      aria-hidden='true'
+                      ariaHidden='true'
                     />
                   </Popover.Button>
 
@@ -320,7 +320,7 @@ export default function Header() {
                               className='-m-3 flex items-start rounded-lg p-3 py-2 hover:bg-gray-50'>
                               <item.icon
                                 className='h-6 w-6 flex-shrink-0 text-[#b2a4ff]'
-                                aria-hidden='true'
+                                ariaHidden='true'
                               />
                               <div className='ml-4'>
                                 <p className='text-base font-medium text-gray-900'>
@@ -380,7 +380,7 @@ export default function Header() {
                   <div className='-mr-2'>
                     <Popover.Button className='inline-flex items-center justify-center rounded-md bg-[#F7F5F2] p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none'>
                       <span className='sr-only'>Close menu</span>
-                      <XMarkIcon className='h-6 w-6' aria-hidden='true' />
+                      <XMarkIcon className='h-6 w-6' ariaHidden='true' />
                     </Popover.Button>
                   </div>
                 </div>
@@ -393,7 +393,7 @@ export default function Header() {
                         className='-m-3 flex items-center rounded-md p-3 hover:bg-gray-50'>
                         <item.icon
                           className='h-6 w-6 flex-shrink-0 text-[#eebe7a]'
-                          aria-hidden='true'
+                          ariaHidden='true'
                         />
                         <span className='ml-3 text-base font-medium text-gray-900'>
                           {item.name}

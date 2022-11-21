@@ -1,17 +1,20 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 const data = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
-    category: "Apparel",
-    title: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    src: false,
+    category: "About Us",
+    idName: "about-us",
+    title: "We design dreams!",
     description:
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. In consequatur eveniet blanditiis quisquam harum? Optio, modi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Infinity designs is a buying agency currently based in India, working with leading brands worldwide. We believe in creating end to end solutions and work closely with our vendor base, client's as well with constant speed, innovations in place.",
+    services: true,
     rev: false,
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1490725263030-1f0521cec8ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80",
+    src: "/images/buyercontact1.JPG",
     category: "Apparel",
     title: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
     description:
@@ -26,15 +29,28 @@ export default function Showcase() {
         return (
           <section
             key={item.id}
+            id={item.idName}
             className={`flex justify-between items-center flex-wrap mt-32 gap-8 ${
               item.rev ? "flex-row-reverse" : "flex-row"
             }`}>
             <div className=''>
-              <img
-                src={item.src}
-                alt=''
-                className='w-[360px] lg:w-[568px] box'
-              />
+              {item.src ? (
+                <img
+                  src={item.src}
+                  alt=''
+                  className='w-[360px] lg:w-[568px] box'
+                />
+              ) : (
+                <div className='w-[360px] lg:w-[568px] box'>
+                  <iframe
+                    src='https://player.vimeo.com/video/770610537?h=d14a516ebb'
+                    width='100%'
+                    height='364'
+                    frameborder='0'
+                    allow='autoplay; fullscreen'
+                    allowfullscreen></iframe>
+                </div>
+              )}
             </div>
             <div className='max-w-xl'>
               <p className='text-[#FFABE1] font-bold tracking-wide uppercase'>
@@ -46,8 +62,29 @@ export default function Showcase() {
               <p className='hidden md:block md:text-sm text-gray-600 mt-5'>
                 <em>{item.description}</em>
               </p>
+              {item.services ? (
+                <>
+                  <h3 className='mt-2 font-bold'>Providing Services</h3>
+                  <div className='flex justify-left items-center gap-32'>
+                    <ul className='list-disc ml-8'>
+                      <li>Sourcing</li>
+                      <li>Vendor Development</li>
+                      <li>Designing</li>
+                      <li>Product Development</li>
+                    </ul>
+                    <ul className='list-disc'>
+                      <li>Pricing</li>
+                      <li>Production & Quality</li>
+                      <li>Quality Control</li>
+                      <li>Logistics</li>
+                    </ul>
+                  </div>
+                </>
+              ) : (
+                ""
+              )}
               <button className='text-md bg-[#B2A4FF] px-4 py-2 text-[#FFf] rounded-lg mt-5 hover:bg-[#8b78f7]'>
-                Shop
+                <a href='/buyer-contact'>Buyer Contact</a>
               </button>
             </div>
           </section>

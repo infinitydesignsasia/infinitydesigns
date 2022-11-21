@@ -1,13 +1,16 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 export default function Hero() {
   return (
     <section className='h-[668px]'>
       <div className='hero w-full h-[668px] bg-center bg-no-repeat bg-contain '>
         <div className='text-white flex justify-center flex-col h-full max-w-7xl px-4 sm:px-6 mx-auto text-left'>
-          <h1
-            className='text-5xl md:text-6xl font-bold z-30'
-            style={{ lineHeight: 1.25 }}>
-            Bringing the soul back to <span className='md:block'>fashion</span>
+          <h1 className='text-5xl md:text-6xl md:leading-[1.25] font-bold z-30'>
+            Bringing the soul back to{" "}
+            <span className='max-w-[480px] mr-auto block text-3xl leading-[1]'>
+              fashion II idea II Life II elegance II fun II freedom II clothes
+              that will make you smile
+            </span>
           </h1>
           <p className='text-sm md:text-xl text-white font-medium mt-8 z-30'>
             Scientifically backed fashion apparel by women,{" "}
@@ -15,7 +18,7 @@ export default function Hero() {
           </p>
           <div className='relative h-[54px] z-30 flex justify-start mt-5 items-center'>
             <button className='bg-[#B2A4FF] hover:bg-[#8b78f7] text-white transition-all duration-300 px-4 py-2 rounded-lg'>
-              Contact Us
+              <a href='/buyer-contact'>Buyer Contact</a>
             </button>
           </div>
         </div>

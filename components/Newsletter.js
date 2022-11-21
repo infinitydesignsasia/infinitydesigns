@@ -6,21 +6,20 @@ export default function Newsletter() {
     <div className=''>
       <section className='max-w-7xl mx-auto px-4 sm:px-6 mt-[120px]'>
         <div className='flex flex-wrap justify-between items-center'>
-          <div className='group max-w-[100%] flex-[0 0 100%] lg:max-w-[50%] lg:flex-[0 0 50%] hover:scale-105 transition'>
+          <div className='group flex-[0 0 100%] lg:max-w-[50%] lg:flex-[0 0 50%] hover:scale-105 transition'>
             <img
-              src='/images/news.svg'
+              src='/images/worldtrend.JPG'
               alt=''
-              className='w-full h-full group-hover:-rotate-3 transition-all'></img>
+              className='w-full h-full group-hover:-rotate-3 transition-all min-w-[550px] min-h-[440px]'></img>
           </div>
           <div className='max-w-[100%] mt-[60px] lg:mt-0 flex-[0 0 100%] lg:max-w-[50%] lg:flex-[0 0 50%] xl:p-[100px] lg:p-[40px]'>
             <p className='text-gray-600 pb-8'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-              velit distinctio veritatis quis recusandae quas necessitatibus,
-              excepturi placeat culpa, perferendis enim.
+              Every day is a fashion show and the world is your runway. So be
+              you! Express the fashion with new clothes, new passion that will
+              talk on your behalf.
             </p>
             <h1 className='pb-8 font-semibold text-[#ff5b00] text-2xl'>
-              Join our community of Lorem ipsum dolor sit amet consectetur
-              adipisicing elit..!
+              Let&apos;s your soul meets fashion!
             </h1>
             <p className='font-bold pb-8 tracking-wide'>#infinitydesigns</p>
             <a
@@ -31,7 +30,6 @@ export default function Newsletter() {
           </div>
         </div>
       </section>
-      <Subscribe />
     </div>
   );
 }

@@ -8,17 +8,38 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { BiChevronDown, BiShoppingBag } from "react-icons/bi";
-
+import { Link } from "react-scroll";
 import {
-  FaFacebookF,
   FaInstagram,
+  FaBaby,
   FaWhatsapp,
   FaConnectdevelop,
+  FaLinkedinIn,
+  FaSnowman,
 } from "react-icons/fa";
-import { AiOutlineAntDesign, AiOutlineControl } from "react-icons/ai";
+import {
+  AiOutlineMan,
+  AiOutlineAntDesign,
+  AiOutlineControl,
+} from "react-icons/ai";
 import { SiYourtraveldottv } from "react-icons/si";
 import { TbShirt } from "react-icons/tb";
-// import { useRouter } from "next/router";
+import { IoMdContact, IoMdContacts } from "react-icons/io";
+import { RiWomenLine } from "react-icons/ri";
+import { GiGlobeRing } from "react-icons/gi";
+
+const contactCol = [
+  {
+    name: "Buyer Contact",
+    href: "/buyer-contact",
+    icon: IoMdContact,
+  },
+  {
+    name: "Vendor Contact",
+    href: "/vendor-contact",
+    icon: IoMdContacts,
+  },
+];
 
 const services = [
   {
@@ -60,18 +81,39 @@ const services = [
 
 const products = [
   {
-    name: "Apparel",
-    description:
-      "Get all of your questions answered in our forums or contact support.",
+    name: "Babies & Kid's Wear",
     href: "#",
-    icon: TbShirt,
+    icon: FaBaby,
   },
   {
-    name: "Accessories",
-    description:
-      "Learn how to maximize our platform to get the most out of it.",
+    name: "Womenswear",
+    href: "#",
+    icon: RiWomenLine,
+  },
+  {
+    name: "Men's Wear",
+    href: "#",
+    icon: AiOutlineMan,
+  },
+  {
+    name: "Scarves",
+    href: "#",
+    icon: FaSnowman,
+  },
+  {
+    name: "Jewelry",
+    href: "#",
+    icon: GiGlobeRing,
+  },
+  {
+    name: "Bags",
     href: "#",
     icon: BiShoppingBag,
+  },
+  {
+    name: "Soft Goods",
+    href: "#",
+    icon: TbShirt,
   },
 ];
 
@@ -80,7 +122,6 @@ function classNames(...classes) {
 }
 
 export default function Header() {
-  // const router = useRouter();
   return (
     <Popover className='sticky top-0 left-0 right-0 bg-[#F7F5F2] z-50'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6'>
@@ -101,11 +142,15 @@ export default function Header() {
             </Popover.Button>
           </div>
           <Popover.Group as='nav' className='hidden space-x-10 md:flex'>
-            <a
-              href='/about'
-              className='text-base font-medium text-gray-500 hover:text-gray-900'>
-              About
-            </a>
+            <Link
+              to='about-us'
+              spy={true}
+              smooth={true}
+              offset={-120}
+              duration={500}
+              className='text-base font-medium text-gray-500 hover:text-gray-900 cursor-pointer'>
+              About Us
+            </Link>
             <Popover className='relative'>
               {({ open }) => (
                 <>
@@ -114,7 +159,7 @@ export default function Header() {
                       open ? "text-gray-900" : "text-gray-500",
                       "group inline-flex items-center rounded-md bg-[#F7F5F2] text-base font-medium hover:text-gray-900 focus:outline-none"
                     )}>
-                    <span>Services</span>
+                    <span>Our Services</span>
                     <BiChevronDown
                       className={classNames(
                         open ? "text-gray-600" : "text-gray-400",
@@ -135,11 +180,14 @@ export default function Header() {
                     <Popover.Panel className='absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2'>
                       <div className='overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5'>
                         <div className='relative grid gap-6 bg-[#F7F5F2] px-5 py-6 sm:gap-8 sm:p-8'>
+                          <h1 className='uppercase tracking-wider font-semibold text-xl'>
+                            What we provide
+                          </h1>
                           {services.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
-                              className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'>
+                              className='-m-3 flex items-start rounded-lg p-3 py-2 hover:bg-gray-50'>
                               <item.icon
                                 className='h-6 w-6 flex-shrink-0 text-[#b2a4ff]'
                                 aria-hidden='true'
@@ -161,6 +209,7 @@ export default function Header() {
                 </>
               )}
             </Popover>
+
             <Popover className='relative'>
               {({ open }) => (
                 <>
@@ -169,7 +218,14 @@ export default function Header() {
                       open ? "text-gray-900" : "text-gray-500",
                       "group inline-flex items-center rounded-md bg-[#F7F5F2] text-base font-medium hover:text-gray-900 focus:outline-none"
                     )}>
-                    <span>Our Products</span>
+                    <Link
+                      to='our-products'
+                      spy={true}
+                      smooth={true}
+                      offset={-120}
+                      duration={500}>
+                      <span>Our Products</span>
+                    </Link>
                     <BiChevronDown
                       className={classNames(
                         open ? "text-gray-600" : "text-gray-400",
@@ -187,9 +243,12 @@ export default function Header() {
                     leave='transition ease-in duration-150'
                     leaveFrom='opacity-100 translate-y-0'
                     leaveTo='opacity-0 translate-y-1'>
-                    <Popover.Panel className='absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0'>
+                    <Popover.Panel className='absolute left-1/2 z-10 mt-3 w-screen max-w-[16rem] -translate-x-1/2 transform px-2 sm:px-0'>
                       <div className='overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5'>
                         <div className='relative grid gap-6 bg-[#F7F5F2] px-5 py-6 sm:gap-8 sm:p-8'>
+                          {/* <h1 className='uppercase tracking-wider font-semibold text-xl'>
+                            
+                          </h1> */}
                           {products.map((item) => (
                             <a
                               key={item.name}
@@ -217,16 +276,69 @@ export default function Header() {
               )}
             </Popover>
             <a
-              href='/contact'
+              href='/careers'
               className='text-base font-medium text-gray-500 hover:text-gray-900'>
-              Contact
+              Careers
             </a>
+            {/* //Contact  */}
+            <Popover className='relative'>
+              {({ open }) => (
+                <>
+                  <Popover.Button
+                    className={classNames(
+                      open ? "text-gray-900" : "text-gray-500",
+                      "group inline-flex items-center rounded-md bg-[#F7F5F2] text-base font-medium hover:text-gray-900 focus:outline-none"
+                    )}>
+                    <span>Contact Us</span>
+                    <BiChevronDown
+                      className={classNames(
+                        open ? "text-gray-600" : "text-gray-400",
+                        "ml-2 h-5 w-5 group-hover:text-gray-500"
+                      )}
+                      aria-hidden='true'
+                    />
+                  </Popover.Button>
+
+                  <Transition
+                    as={Fragment}
+                    enter='transition ease-out duration-200'
+                    enterFrom='opacity-0 translate-y-1'
+                    enterTo='opacity-100 translate-y-0'
+                    leave='transition ease-in duration-150'
+                    leaveFrom='opacity-100 translate-y-0'
+                    leaveTo='opacity-0 translate-y-1'>
+                    <Popover.Panel className='absolute z-10 -ml-4 mt-3 w-screen max-w-[16rem] transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2'>
+                      <div className='overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5'>
+                        <div className='relative grid gap-6 bg-[#F7F5F2] px-5 py-6 sm:gap-8 sm:p-8'>
+                          {contactCol.map((item) => (
+                            <a
+                              key={item.name}
+                              href={item.href}
+                              className='-m-3 flex items-start rounded-lg p-3 py-2 hover:bg-gray-50'>
+                              <item.icon
+                                className='h-6 w-6 flex-shrink-0 text-[#b2a4ff]'
+                                aria-hidden='true'
+                              />
+                              <div className='ml-4'>
+                                <p className='text-base font-medium text-gray-900'>
+                                  {item.name}
+                                </p>
+                              </div>
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    </Popover.Panel>
+                  </Transition>
+                </>
+              )}
+            </Popover>
           </Popover.Group>
           <div className='hidden items-center justify-end md:flex md:flex-1 lg:w-0 gap-8'>
             <a
               href='#'
               className='whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900'>
-              <FaFacebookF />
+              <FaLinkedinIn />
             </a>
             <a
               href='#'
@@ -289,15 +401,19 @@ export default function Header() {
             </div>
             <div className='space-y-6 py-6 px-5'>
               <div className='grid grid-cols-2 gap-y-4 gap-x-8'>
-                <a
-                  href='/about'
-                  className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                  About
-                </a>
+                <Link
+                  to='about-us'
+                  spy={true}
+                  smooth={true}
+                  offset={-120}
+                  duration={500}
+                  className='text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer'>
+                  About Us
+                </Link>
                 <a
                   href='#'
                   className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                  Products
+                  Our Products
                 </a>
                 <a
                   href='/privacy-policy'
@@ -305,16 +421,16 @@ export default function Header() {
                   Privacy Policy
                 </a>
                 <a
-                  href='/terms'
+                  href='/careers'
                   className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                  Terms
+                  Careers
                 </a>
               </div>
               <div>
                 <a
-                  href='/contact'
+                  href='/buyer-contact'
                   className='flex w-full items-center justify-center rounded-md border border-transparent bg-[#f3d7b0] px-4 py-2 text-base font-medium text-black shadow-sm hover:bg-[#efc78e]'>
-                  Contact Us
+                  Buyer Contact
                 </a>
               </div>
             </div>

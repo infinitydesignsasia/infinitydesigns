@@ -38,14 +38,14 @@ export default function Showcase() {
                 <img
                   src={item.src}
                   alt=''
-                  className='w-[360px] lg:w-[568px] box'
+                  className='w-[360px] lg:w-[568px] h-[400px] box'
                 />
               ) : (
-                <div className='w-[360px] lg:w-[568px] box'>
+                <div className='w-full h-[400px] lg:w-[568px] box'>
                   <iframe
                     src='https://player.vimeo.com/video/770610537?h=d14a516ebb'
                     width='100%'
-                    height='364'
+                    height='100%'
                     frameborder='0'
                     allow='autoplay; fullscreen'
                     allowfullscreen></iframe>
@@ -56,23 +56,23 @@ export default function Showcase() {
               <p className='text-[#FFABE1] font-bold tracking-wide uppercase'>
                 {item.category}
               </p>
-              <h1 className='text-sm md:text-lg lg:text-2xl font-semibold mt-2'>
+              <h1 className='text-xl md:text-2xl lg:text-3xl font-semibold mt-2'>
                 {item.title}
               </h1>
-              <p className='hidden md:block md:text-sm text-gray-600 mt-5'>
+              <p className='block md:text-sm text-gray-600 mt-5'>
                 <em>{item.description}</em>
               </p>
               {item.services ? (
                 <>
                   <h3 className='mt-2 font-bold'>Providing Services</h3>
-                  <div className='flex justify-left items-center gap-32'>
+                  <div className='flex flex-col md:flex-row justify-left md:items-center md:gap-32'>
                     <ul className='list-disc ml-8'>
                       <li>Sourcing</li>
                       <li>Vendor Development</li>
                       <li>Designing</li>
                       <li>Product Development</li>
                     </ul>
-                    <ul className='list-disc'>
+                    <ul className='list-disc ml-8 md:ml-0'>
                       <li>Pricing</li>
                       <li>Production & Quality</li>
                       <li>Quality Control</li>

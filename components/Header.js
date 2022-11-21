@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
@@ -27,6 +27,8 @@ import { TbShirt } from "react-icons/tb";
 import { IoMdContact, IoMdContacts } from "react-icons/io";
 import { RiWomenLine } from "react-icons/ri";
 import { GiGlobeRing } from "react-icons/gi";
+import { useRouter } from "next/router";
+import Showcase from "./Showcase";
 
 const contactCol = [
   {
@@ -122,6 +124,7 @@ function classNames(...classes) {
 }
 
 export default function Header() {
+  const router = useRouter();
   return (
     <Popover className='sticky top-0 left-0 right-0 bg-[#F7F5F2] z-50'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6'>
@@ -365,76 +368,90 @@ export default function Header() {
         <Popover.Panel
           focus
           className='absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden z-50'>
-          <div className='divide-y-2 divide-[#000] rounded-lg bg-[#F7F5F2] shadow-lg ring-1 ring-black ring-opacity-5'>
-            <div className='px-5 pt-5 pb-6'>
-              <div className='flex items-center justify-between'>
+          {({ close }) => (
+            <div className='divide-y-2 divide-[#000] rounded-lg bg-[#F7F5F2] shadow-lg ring-1 ring-black ring-opacity-5'>
+              <div className='px-5 pt-5 pb-6'>
+                <div className='flex items-center justify-between'>
+                  <div>
+                    <h1 className='text-xl whitespace-nowrap font-semibold tracking-wider'>
+                      Infinity Designs
+                    </h1>
+                  </div>
+                  <div className='-mr-2'>
+                    <Popover.Button className='inline-flex items-center justify-center rounded-md bg-[#F7F5F2] p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none'>
+                      <span className='sr-only'>Close menu</span>
+                      <XMarkIcon className='h-6 w-6' aria-hidden='true' />
+                    </Popover.Button>
+                  </div>
+                </div>
+                <div className='mt-6'>
+                  <nav className='grid gap-y-8'>
+                    {services.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className='-m-3 flex items-center rounded-md p-3 hover:bg-gray-50'>
+                        <item.icon
+                          className='h-6 w-6 flex-shrink-0 text-[#eebe7a]'
+                          aria-hidden='true'
+                        />
+                        <span className='ml-3 text-base font-medium text-gray-900'>
+                          {item.name}
+                        </span>
+                      </a>
+                    ))}
+                  </nav>
+                </div>
+              </div>
+              <div className='space-y-6 py-6 px-5'>
+                <div className='grid grid-cols-2 gap-y-4 gap-x-8'>
+                  <Link
+                    to='about-us'
+                    spy={true}
+                    smooth={true}
+                    offset={-120}
+                    duration={500}
+                    className='text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer'
+                    onClick={() => {
+                      router.replace("/#about-us");
+                      close();
+                    }}>
+                    About Us
+                  </Link>
+                  <Link
+                    to='our-products'
+                    spy={true}
+                    smooth={true}
+                    offset={-120}
+                    duration={500}
+                    className='text-base font-medium text-gray-900 hover:text-gray-700'
+                    onClick={() => {
+                      router.replace("/#our-products");
+                      close();
+                    }}>
+                    Our Products
+                  </Link>
+                  <a
+                    href='/terms-conditions'
+                    className='text-base font-medium text-gray-900 hover:text-gray-700'>
+                    Terms & Conditions
+                  </a>
+                  <a
+                    href='/careers'
+                    className='text-base font-medium text-gray-900 hover:text-gray-700'>
+                    Careers
+                  </a>
+                </div>
                 <div>
-                  <h1 className='text-xl whitespace-nowrap font-semibold tracking-wider'>
-                    Infinity Designs
-                  </h1>
-                </div>
-                <div className='-mr-2'>
-                  <Popover.Button className='inline-flex items-center justify-center rounded-md bg-[#F7F5F2] p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none'>
-                    <span className='sr-only'>Close menu</span>
-                    <XMarkIcon className='h-6 w-6' aria-hidden='true' />
-                  </Popover.Button>
+                  <a
+                    href='/buyer-contact'
+                    className='flex w-full items-center justify-center rounded-md border border-transparent bg-[#f3d7b0] px-4 py-2 text-base font-medium text-black shadow-sm hover:bg-[#efc78e]'>
+                    Buyer Contact
+                  </a>
                 </div>
               </div>
-              <div className='mt-6'>
-                <nav className='grid gap-y-8'>
-                  {services.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className='-m-3 flex items-center rounded-md p-3 hover:bg-gray-50'>
-                      <item.icon
-                        className='h-6 w-6 flex-shrink-0 text-[#eebe7a]'
-                        aria-hidden='true'
-                      />
-                      <span className='ml-3 text-base font-medium text-gray-900'>
-                        {item.name}
-                      </span>
-                    </a>
-                  ))}
-                </nav>
-              </div>
             </div>
-            <div className='space-y-6 py-6 px-5'>
-              <div className='grid grid-cols-2 gap-y-4 gap-x-8'>
-                <Link
-                  to='about-us'
-                  spy={true}
-                  smooth={true}
-                  offset={-120}
-                  duration={500}
-                  className='text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer'>
-                  About Us
-                </Link>
-                <a
-                  href='#'
-                  className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                  Our Products
-                </a>
-                <a
-                  href='/privacy-policy'
-                  className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                  Privacy Policy
-                </a>
-                <a
-                  href='/careers'
-                  className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                  Careers
-                </a>
-              </div>
-              <div>
-                <a
-                  href='/buyer-contact'
-                  className='flex w-full items-center justify-center rounded-md border border-transparent bg-[#f3d7b0] px-4 py-2 text-base font-medium text-black shadow-sm hover:bg-[#efc78e]'>
-                  Buyer Contact
-                </a>
-              </div>
-            </div>
-          </div>
+          )}
         </Popover.Panel>
       </Transition>
     </Popover>

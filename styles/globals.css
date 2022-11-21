@@ -27,7 +27,7 @@ a {
 .hero {
   /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(/images/dress.svg); */
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
     url(/images/dress.svg);
   background-origin: border-box;
   background-blend-mode: darken;

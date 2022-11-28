@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
@@ -8,7 +8,8 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { BiChevronDown, BiShoppingBag } from "react-icons/bi";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
+import Link from "next/link";
 import {
   FaInstagram,
   FaBaby,
@@ -28,7 +29,6 @@ import { IoMdContact, IoMdContacts } from "react-icons/io";
 import { RiWomenLine } from "react-icons/ri";
 import { GiGlobeRing } from "react-icons/gi";
 import { useRouter } from "next/router";
-import Showcase from "./Showcase";
 
 const contactCol = [
   {
@@ -146,11 +146,12 @@ export default function Header() {
           </div>
           <Popover.Group as='nav' className='hidden space-x-10 md:flex'>
             <Link
-              to='about-us'
-              spy={true}
-              smooth={true}
-              offset={-120}
-              duration={500}
+              href='/'
+              className='text-base font-medium text-gray-500 hover:text-gray-900 cursor-pointer'>
+              Home
+            </Link>
+            <Link
+              href='#about-us'
               className='text-base font-medium text-gray-500 hover:text-gray-900 cursor-pointer'>
               About Us
             </Link>
@@ -221,12 +222,7 @@ export default function Header() {
                       open ? "text-gray-900" : "text-gray-500",
                       "group inline-flex items-center rounded-md bg-[#F7F5F2] text-base font-medium hover:text-gray-900 focus:outline-none"
                     )}>
-                    <Link
-                      to='our-products'
-                      spy={true}
-                      smooth={true}
-                      offset={-120}
-                      duration={500}>
+                    <Link href='#our-products'>
                       <span>Our Products</span>
                     </Link>
                     <BiChevronDown
@@ -406,11 +402,7 @@ export default function Header() {
               <div className='space-y-6 py-6 px-5'>
                 <div className='grid grid-cols-2 gap-y-4 gap-x-8'>
                   <Link
-                    to='about-us'
-                    spy={true}
-                    smooth={true}
-                    offset={-120}
-                    duration={500}
+                    href='#about-us'
                     className='text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer'
                     onClick={() => {
                       router.replace("/#about-us");
@@ -419,11 +411,7 @@ export default function Header() {
                     About Us
                   </Link>
                   <Link
-                    to='our-products'
-                    spy={true}
-                    smooth={true}
-                    offset={-120}
-                    duration={500}
+                    href='#our-products'
                     className='text-base font-medium text-gray-900 hover:text-gray-700'
                     onClick={() => {
                       router.replace("/#our-products");

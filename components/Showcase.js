@@ -33,46 +33,47 @@ export default function Showcase() {
             className={`flex justify-between items-center flex-wrap mt-32 gap-8 ${
               item.rev ? "flex-row-reverse" : "flex-row"
             }`}>
-            <div className=''>
+            <div className='w-[360px] lg:w-[568px]'>
               {item.src ? (
                 <img
                   src={item.src}
                   alt=''
-                  className='w-[360px] lg:w-[568px] h-[400px] box'
+                  className='w-[360px] lg:w-[568px] box'
                 />
               ) : (
-                <div className='w-full h-[400px] lg:w-[568px] box'>
+                <div className='video-background box'>
                   <iframe
                     src='https://player.vimeo.com/video/770610537?h=d14a516ebb'
-                    width='100%'
-                    height='100%'
                     frameBorder='0'
                     allow='autoplay; fullscreen'
-                    allowFullScreen></iframe>
+                    allowFullScreen
+                    className='h-full w-full m-0 p-0 box'></iframe>
                 </div>
               )}
             </div>
             <div className='max-w-xl'>
-              <p className='text-[#FFABE1] font-bold tracking-wide uppercase'>
+              <p className='text-sm md:text-md text-[#FFABE1] font-bold tracking-wide uppercase'>
                 {item.category}
               </p>
-              <h1 className='text-xl md:text-2xl lg:text-3xl font-semibold mt-2'>
+              <h1 className='text-lg md:text-xl lg:text-3xl font-semibold mt-2'>
                 {item.title}
               </h1>
-              <p className='block md:text-sm text-gray-600 mt-5'>
+              <p className='block text-xs md:text-sm text-gray-600 mt-5'>
                 <em>{item.description}</em>
               </p>
               {item.services ? (
                 <>
-                  <h3 className='mt-2 font-bold'>Providing Services</h3>
+                  <h3 className='mt-2 font-bold text-lg md:text-xl lg:text-3xl'>
+                    Providing Services
+                  </h3>
                   <div className='flex flex-col md:flex-row justify-left md:items-center md:gap-32'>
-                    <ul className='list-disc ml-8'>
+                    <ul className='text-md md:text-lg list-disc ml-8'>
                       <li>Sourcing</li>
                       <li>Vendor Development</li>
                       <li>Designing</li>
                       <li>Product Development</li>
                     </ul>
-                    <ul className='list-disc ml-8 md:ml-0'>
+                    <ul className='text-md md:text-lg list-disc ml-8 md:ml-0'>
                       <li>Pricing</li>
                       <li>Production & Quality</li>
                       <li>Quality Control</li>

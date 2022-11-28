@@ -6,13 +6,13 @@ export default function Newsletter() {
     <div className=''>
       <section className='max-w-7xl mx-auto px-4 sm:px-6 mt-[120px]'>
         <div className='flex flex-wrap justify-between items-center'>
-          <div className='group flex-[0 0 100%] lg:max-w-[50%] lg:flex-[0 0 50%] hover:scale-105 transition'>
+          <div className='group flex-[0 0 100%] lg:max-w-[35%] lg:flex-[0 0 35%] hover:scale-105 transition'>
             <img
               src='/images/worldtrend.JPG'
               alt=''
               className='w-full h-full group-hover:-rotate-3 transition-all min-h-[440px]'></img>
           </div>
-          <div className='max-w-[100%] mt-[60px] lg:mt-0 flex-[0 0 100%] lg:max-w-[50%] lg:flex-[0 0 50%] xl:p-[100px] lg:p-[40px]'>
+          <div className='max-w-[100%] mt-[60px] lg:mt-0 flex-[0 0 100%] lg:max-w-[65%] lg:flex-[0 0 65%] xl:p-[100px] lg:p-[40px]'>
             <p className='text-gray-600 pb-8'>
               Every day is a fashion show and the world is your runway. So be
               you! Express the fashion with new clothes, new passion that will

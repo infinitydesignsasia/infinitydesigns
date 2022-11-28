@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export default function Vendor() {
@@ -22,6 +23,7 @@ export default function Vendor() {
           Loading…
         </iframe>
       </div>
+      <Footer />
     </div>
   );
 }

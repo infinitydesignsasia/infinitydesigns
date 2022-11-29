@@ -13,7 +13,7 @@ export default function Footer() {
           <div className='flex justify-center'>
             <a href='#!' className='mr-6 text-black'>
               <svg
-                ariaHidden='true'
+                aria-hidden='true'
                 focusable='false'
                 dataprefix='fab'
                 dataicon='twitter'
@@ -28,7 +28,7 @@ export default function Footer() {
             </a>
             <a href='#!' className='mr-6 text-black'>
               <svg
-                ariaHidden='true'
+                aria-hidden='true'
                 focusable='false'
                 dataprefix='fab'
                 dataicon='google'
@@ -43,7 +43,7 @@ export default function Footer() {
             </a>
             <a href='#!' className='mr-6 text-black'>
               <svg
-                ariaHidden='true'
+                aria-hidden='true'
                 focusable='false'
                 dataprefix='fab'
                 dataicon='linkedin-in'
@@ -128,7 +128,7 @@ export default function Footer() {
               </h6>
               <p className='flex items-center justify-center md:justify-start mb-4'>
                 <svg
-                  ariaHidden='true'
+                  aria-hidden='true'
                   focusable='false'
                   dataprefix='fas'
                   dataicon='home'
@@ -145,7 +145,7 @@ export default function Footer() {
               </p>
               <p className='flex items-center justify-center md:justify-start mb-4'>
                 <svg
-                  ariaHidden='true'
+                  aria-hidden='true'
                   focusable='false'
                   dataprefix='fas'
                   dataicon='envelope'
@@ -161,7 +161,7 @@ export default function Footer() {
               </p>
               <p className='flex items-center justify-center md:justify-start mb-4'>
                 <svg
-                  ariaHidden='true'
+                  aria-hidden='true'
                   focusable='false'
                   dataprefix='fas'
                   dataicon='phone'

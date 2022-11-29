@@ -11,15 +11,20 @@ export default function Vendor() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
+      <div className='vc-banner h-[400px] w-full relative'>
+        <h1 className='absolute left-0 right-0 px-8 bottom-36 flex justify-center items-center text-white text-xl sm:text-2xl md:text-4xl'>
+          Infinty Designs &#8212; Vendor Contact
+        </h1>
+      </div>
       <div className='flex justify-center items-center mt-[60px] mb-[120px]'>
         <iframe
           src='https://share-eu1.hsforms.com/1M0vmMuJhT-OqEw-iU9JdCwfui2i'
           width='640'
           height='1500'
-          frameborder='0'
-          marginheight='0'
+          frameBorder='0'
+          marginHeight='0'
           scrolling='no'
-          marginwidth='0'>
+          marginWidth='0'>
           Loading…
         </iframe>
       </div>

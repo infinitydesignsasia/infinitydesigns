@@ -141,7 +141,7 @@ export default function Header() {
           <div className='-my-2 -mr-2 md:hidden'>
             <Popover.Button className='inline-flex items-center justify-center rounded-md bg-[#F7F5F2] p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none'>
               <span className='sr-only'>Open menu</span>
-              <Bars3Icon className='h-6 w-6' ariaHidden='true' />
+              <Bars3Icon className='h-6 w-6' aria-hidden='true' />
             </Popover.Button>
           </div>
           <Popover.Group as='nav' className='hidden space-x-10 md:flex'>
@@ -169,7 +169,7 @@ export default function Header() {
                         open ? "text-gray-600" : "text-gray-400",
                         "ml-2 h-5 w-5 group-hover:text-gray-500"
                       )}
-                      ariaHidden='true'
+                      aria-hidden='true'
                     />
                   </Popover.Button>
 
@@ -184,17 +184,17 @@ export default function Header() {
                     <Popover.Panel className='absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2'>
                       <div className='overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5'>
                         <div className='relative grid gap-6 bg-[#F7F5F2] px-5 py-6 sm:gap-8 sm:p-8'>
-                          <h1 className='uppercase tracking-wider font-semibold text-xl'>
+                          <h1 className='uppercase tracking-wider font-semibold text-lg'>
                             What we provide
                           </h1>
                           {services.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
-                              className='-m-3 flex items-start rounded-lg p-3 py-2 hover:bg-gray-50'>
+                              className='-m-3 flex items-start rounded-lg p-3 py-1 hover:bg-gray-50'>
                               <item.icon
                                 className='h-6 w-6 flex-shrink-0 text-[#b2a4ff]'
-                                ariaHidden='true'
+                                aria-hidden='true'
                               />
                               <div className='ml-4'>
                                 <p className='text-base font-medium text-gray-900'>
@@ -230,7 +230,7 @@ export default function Header() {
                         open ? "text-gray-600" : "text-gray-400",
                         "ml-2 h-5 w-5 group-hover:text-gray-500"
                       )}
-                      ariaHidden='true'
+                      aria-hidden='true'
                     />
                   </Popover.Button>
 
@@ -245,9 +245,6 @@ export default function Header() {
                     <Popover.Panel className='absolute left-1/2 z-10 mt-3 w-screen max-w-[16rem] -translate-x-1/2 transform px-2 sm:px-0'>
                       <div className='overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5'>
                         <div className='relative grid gap-6 bg-[#F7F5F2] px-5 py-6 sm:gap-8 sm:p-8'>
-                          {/* <h1 className='uppercase tracking-wider font-semibold text-xl'>
-                            
-                          </h1> */}
                           {products.map((item) => (
                             <a
                               key={item.name}
@@ -255,7 +252,7 @@ export default function Header() {
                               className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'>
                               <item.icon
                                 className='h-6 w-6 flex-shrink-0 text-[#b2a4ff]'
-                                ariaHidden='true'
+                                aria-hidden='true'
                               />
                               <div className='ml-4'>
                                 <p className='text-base font-medium text-gray-900'>
@@ -294,7 +291,7 @@ export default function Header() {
                         open ? "text-gray-600" : "text-gray-400",
                         "ml-2 h-5 w-5 group-hover:text-gray-500"
                       )}
-                      ariaHidden='true'
+                      aria-hidden='true'
                     />
                   </Popover.Button>
 
@@ -316,7 +313,7 @@ export default function Header() {
                               className='-m-3 flex items-start rounded-lg p-3 py-2 hover:bg-gray-50'>
                               <item.icon
                                 className='h-6 w-6 flex-shrink-0 text-[#b2a4ff]'
-                                ariaHidden='true'
+                                aria-hidden='true'
                               />
                               <div className='ml-4'>
                                 <p className='text-base font-medium text-gray-900'>
@@ -333,7 +330,7 @@ export default function Header() {
               )}
             </Popover>
           </Popover.Group>
-          <div className='hidden items-center justify-end md:flex md:flex-1 lg:w-0 gap-8'>
+          <div className='hidden items-center justify-end lg:flex md:flex-1 lg:w-0 gap-8'>
             <a
               href='#'
               className='whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900'>
@@ -376,12 +373,13 @@ export default function Header() {
                   <div className='-mr-2'>
                     <Popover.Button className='inline-flex items-center justify-center rounded-md bg-[#F7F5F2] p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none'>
                       <span className='sr-only'>Close menu</span>
-                      <XMarkIcon className='h-6 w-6' ariaHidden='true' />
+                      <XMarkIcon className='h-6 w-6' aria-hidden='true' />
                     </Popover.Button>
                   </div>
                 </div>
                 <div className='mt-6'>
                   <nav className='grid gap-y-8'>
+                    <h1 className='text-lg font-medium'>Our Services</h1>
                     {services.map((item) => (
                       <a
                         key={item.name}
@@ -389,7 +387,7 @@ export default function Header() {
                         className='-m-3 flex items-center rounded-md p-3 hover:bg-gray-50'>
                         <item.icon
                           className='h-6 w-6 flex-shrink-0 text-[#eebe7a]'
-                          ariaHidden='true'
+                          aria-hidden='true'
                         />
                         <span className='ml-3 text-base font-medium text-gray-900'>
                           {item.name}
@@ -401,6 +399,15 @@ export default function Header() {
               </div>
               <div className='space-y-6 py-6 px-5'>
                 <div className='grid grid-cols-2 gap-y-4 gap-x-8'>
+                  <Link
+                    href='/'
+                    className='text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer'
+                    onClick={() => {
+                      router.replace("/#about-us");
+                      close();
+                    }}>
+                    Home
+                  </Link>
                   <Link
                     href='#about-us'
                     className='text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer'

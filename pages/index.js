@@ -21,7 +21,7 @@ export default function Home() {
       <Hero />
       <Showcase />
       <Products />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Newsletter />
       <Footer />
     </div>

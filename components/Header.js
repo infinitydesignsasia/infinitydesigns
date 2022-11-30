@@ -46,37 +46,27 @@ const contactCol = [
 const services = [
   {
     name: "Designing",
-    description:
-      "We commit teams to chip away at most recent trends, design, plan advancement that addresses the issues of requesting clients.",
-    href: "#",
+    href: "/our-services",
     icon: AiOutlineAntDesign,
   },
   {
     name: "Product Development",
-    description:
-      "We work with factories which furnish total arrangements with specialists, chipping away at future patterns.",
-    href: "#",
+    href: "/our-services",
     icon: FaConnectdevelop,
   },
   {
     name: "Production & Quality",
-    description:
-      "Designers, merchants and quality assurance work with industrial facilities to get the correct sort of items that meets the customer necessities. for example, as far as design innovation, right product with right drapes and fittings.",
-    href: "#",
+    href: "/our-services",
     icon: ShieldCheckIcon,
   },
   {
     name: "Quality Control",
-    description:
-      "We dependent on our client necessity adherence to AQL 1.0 – 2.5. Quality controller sets quality standards and monitors to decrease dismissal rates.",
-    href: "#",
+    href: "/our-services",
     icon: AiOutlineControl,
   },
   {
     name: "Logistics",
-    description:
-      "Shipping dep facilitates with the cargo forwarders and transportation specialists.",
-    href: "#",
+    href: "/our-services",
     icon: SiYourtraveldottv,
   },
 ];
@@ -84,37 +74,37 @@ const services = [
 const products = [
   {
     name: "Babies & Kid's Wear",
-    href: "#",
+    href: "/#our-products",
     icon: FaBaby,
   },
   {
     name: "Womenswear",
-    href: "#",
+    href: "/#our-products",
     icon: RiWomenLine,
   },
   {
     name: "Men's Wear",
-    href: "#",
+    href: "/#our-products",
     icon: AiOutlineMan,
   },
   {
     name: "Scarves",
-    href: "#",
+    href: "/#our-products",
     icon: FaSnowman,
   },
   {
     name: "Jewelry",
-    href: "#",
+    href: "/#our-products",
     icon: GiGlobeRing,
   },
   {
     name: "Bags",
-    href: "#",
+    href: "/#our-products",
     icon: BiShoppingBag,
   },
   {
     name: "Soft Goods",
-    href: "#",
+    href: "/#our-products",
     icon: TbShirt,
   },
 ];
@@ -335,11 +325,6 @@ export default function Header() {
               href='#'
               className='whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900'>
               <FaLinkedinIn />
-            </a>
-            <a
-              href='#'
-              className='whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900'>
-              <FaInstagram />
             </a>
             <a
               href='#'

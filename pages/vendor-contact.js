@@ -13,7 +13,7 @@ export default function Vendor() {
       <Header />
       <div className='vc-banner h-[400px] w-full relative'>
         <h1 className='absolute left-0 right-0 px-8 bottom-36 flex justify-center items-center text-white text-xl sm:text-2xl md:text-4xl'>
-          Infinty Designs &#8212; Vendor Contact
+          Infinity Designs &#8212; Vendor Contact
         </h1>
       </div>
       <div className='flex justify-center items-center mt-[60px] mb-[120px]'>

@@ -1,6 +1,6 @@
 import Head from "next/head";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
 
 export default function Careers() {
   return (
@@ -53,6 +53,8 @@ export default function Careers() {
           <button className='px-4 py-2 bg-cyan-300'>Filter</button>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

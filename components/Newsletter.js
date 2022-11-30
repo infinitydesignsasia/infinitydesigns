@@ -22,11 +22,11 @@ export default function Newsletter() {
               Let&apos;s your soul meets fashion!
             </h1>
             <p className='font-bold pb-8 tracking-wide'>#infinitydesigns</p>
-            <a
+            {/* <a
               href='https://instagram.com'
               className='border-black border-b-2 hover:text-[#ff5b00] hover:border-[#ff5b00] transition-colors'>
               Follow on us Instagram
-            </a>
+            </a> */}
           </div>
         </div>
       </section>

@@ -4,7 +4,7 @@ export default function Subscribe() {
       <div className='max-w-7xl mx-auto flex flex-wrap justify-between items-center'>
         <div className='lg:text-left w-full'>
           <h1 className='font-bold'>Stay up to date!</h1>
-          <h3 className='text-gray-600 py-4'>Sign up for our newsletter.</h3>
+          <h3 className='text-gray-800 py-4'>Sign up for our newsletter.</h3>
         </div>
         <div className='w-full'>
           <input

@@ -14,7 +14,7 @@ export default function Vendor() {
       <Header />
       <div className='bc-banner h-[400px] w-full relative'>
         <h1 className='absolute left-0 right-0 bottom-36 flex justify-center items-center text-white text-4xl'>
-          Infinty Designs &#8212; Buyer Contact
+          Infinity Designs &#8212; Buyer Contact
         </h1>
       </div>
       <div className='flex justify-center items-center mt-[60px] mb-[120px]'>

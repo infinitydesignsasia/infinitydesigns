@@ -33,21 +33,17 @@ export default function Showcase() {
             className={`flex justify-between items-center flex-wrap mt-32 gap-8 ${
               item.rev ? "flex-row-reverse" : "flex-row"
             }`}>
-            <div className='w-[360px] lg:w-[568px]'>
+            <div className='w-[400px] lg:w-[568px] box'>
               {item.src ? (
-                <img
-                  src={item.src}
-                  alt=''
-                  className='w-[360px] lg:w-[568px] box'
-                />
+                <img src={item.src} alt='' className='w-[400px] lg:w-[568px]' />
               ) : (
-                <div className='video-background box'>
+                <div className='video-background'>
                   <iframe
                     src='https://player.vimeo.com/video/770610537?h=d14a516ebb'
                     frameBorder='0'
                     allow='autoplay; fullscreen'
                     allowFullScreen
-                    className='h-full w-full m-0 p-0 box'></iframe>
+                    className='h-full w-full m-0 p-0'></iframe>
                 </div>
               )}
             </div>
@@ -63,7 +59,7 @@ export default function Showcase() {
               </p>
               {item.services ? (
                 <>
-                  <h3 className='mt-2 font-bold text-lg md:text-xl lg:text-3xl'>
+                  <h3 className='my-4 font-bold text-lg md:text-xl lg:text-2xl'>
                     Providing Services
                   </h3>
                   <div className='flex flex-col md:flex-row justify-left md:items-center md:gap-32'>

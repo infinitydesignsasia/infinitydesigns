@@ -61,11 +61,11 @@ export default function Products() {
         })}
       </div>
 
-      <div className='w-full text-center mt-12'>
+      {/* <div className='w-full text-center mt-12'>
         <button className='text-xl bg-[#B2A4FF] hover:bg-[#8b78f7] px-4 py-2 rounded-lg text-white'>
           View More
         </button>
-      </div>
+      </div> */}
     </section>
   );
 }

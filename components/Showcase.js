@@ -10,15 +10,16 @@ const data = [
     description:
       "Infinity designs is a buying agency currently based in India, working with leading brands worldwide. We believe in creating end to end solutions and work closely with our vendor base, client's as well with constant speed, innovations in place.",
     services: true,
+    button: "Buyer Contact",
     rev: false,
   },
   {
     id: 2,
     src: "/images/buyercontact1.JPG",
-    category: "Apparel",
-    title: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    description:
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. In consequatur eveniet blanditiis quisquam harum? Optio, modi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    category: "Buyer Contact",
+    title:
+      "Idea II Life II Elegance II Fun II Freedom II Clothes that will make you smile",
+    button: "Let's Connect",
     rev: true,
   },
 ];
@@ -40,9 +41,7 @@ export default function Showcase() {
                 <div className='video-background'>
                   <iframe
                     src='https://player.vimeo.com/video/770610537?h=d14a516ebb'
-                    frameBorder='0'
                     allow='autoplay; fullscreen'
-                    allowFullScreen
                     className='h-full w-full m-0 p-0'></iframe>
                 </div>
               )}
@@ -54,7 +53,7 @@ export default function Showcase() {
               <h1 className='text-lg md:text-xl lg:text-3xl font-semibold mt-2'>
                 {item.title}
               </h1>
-              <p className='block text-xs md:text-sm text-gray-600 mt-5'>
+              <p className='block text-sm md:text-[16px] leading-6 text-gray-600 mt-5'>
                 <em>{item.description}</em>
               </p>
               {item.services ? (
@@ -63,13 +62,13 @@ export default function Showcase() {
                     Providing Services
                   </h3>
                   <div className='flex flex-col md:flex-row justify-left md:items-center md:gap-32'>
-                    <ul className='text-md md:text-lg list-disc ml-8'>
+                    <ul className='text-md md:text-lg list-square ml-8'>
                       <li>Sourcing</li>
                       <li>Vendor Development</li>
                       <li>Designing</li>
                       <li>Product Development</li>
                     </ul>
-                    <ul className='text-md md:text-lg list-disc ml-8 md:ml-0'>
+                    <ul className='text-md md:text-lg list-square ml-8 md:ml-0'>
                       <li>Pricing</li>
                       <li>Production & Quality</li>
                       <li>Quality Control</li>
@@ -81,7 +80,7 @@ export default function Showcase() {
                 ""
               )}
               <button className='text-md bg-[#B2A4FF] px-4 py-2 text-[#FFf] rounded-lg mt-5 hover:bg-[#8b78f7]'>
-                <a href='/buyer-contact'>Buyer Contact</a>
+                <a href='/buyer-contact'>{item.button}</a>
               </button>
             </div>
           </section>

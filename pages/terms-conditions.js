@@ -1,5 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Vendor() {
   return (
@@ -12,41 +14,87 @@ export default function Vendor() {
       <Header />
       <div className='max-w-5xl mx-auto px-4 sm:px-6 my-[60px]'>
         <h2 className='text-2xl md:text-4xl'>
-          <strong>Terms and Conditions</strong>
+          <strong>TERMS OF USER OF WEBSITE AND SERVICE AGREEMENT</strong>
         </h2>
 
-        <p className='text-xl my-4'>Welcome to infinitydesign.com!</p>
-
+        <p className='text-xl my-4'>
+          Please read this terms and service agreement carefully. By using this
+          website [www.infinitydesigns.co.in] Or using our Services from through
+          this website you agree to be bound by all terms and conditions
+          agreement.
+        </p>
+        <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
+          <strong>I. Website</strong>
+        </h3>
         <p>
           These terms and conditions outline the rules and regulations for the
           use of Infinity Designs&apos;s Website, located at
-          https://infinitydesign.com.
-        </p>
-
-        <p>
-          By accessing this website we assume you accept these terms and
-          conditions. Do not continue to use infinitydesign.com if you do not
-          agree to take all of the terms and conditions stated on this page.
+          https://www.infinitydesign.co.in
         </p>
 
         <p>
           The following terminology applies to these Terms and Conditions,
-          Privacy Statement and Disclaimer Notice and all Agreements:
-          &apos;Client&apos;, &apos;You&apos; and &apos;Your&apos; refers to
-          you, the person log on this website and compliant to the
-          Company&apos;s terms and conditions. &apos;The Company&apos;,
-          &apos;Ourselves&apos;, &apos;We&apos;, &apos;Our&apos; and
-          &apos;Us&apos;, refers to our Company. &apos;Party&apos;,
-          &apos;Parties&apos;, or &apos;Us&apos;, refers to both the Client and
-          ourselves. All terms refer to the offer, acceptance and consideration
-          of payment necessary to undertake the process of our assistance to the
-          Client in the most appropriate manner for the express purpose of
-          meeting the Client&apos;s needs in respect of provision of the
-          Company&apos;s stated services, in accordance with and subject to,
-          prevailing law of Netherlands. Any use of the above terminology or
-          other words in the singular, plural, capitalization and/or he/she or
-          they, are taken as interchangeable and therefore as referring to same.
+          Privacy Statement and Disclaimer Notice and all Agreements: 'Client',
+          'Vendor' 'You' and 'Your' refers to you, the person log on this
+          website and compliant to the Company's terms and conditions. 'The
+          Company', 'Ourselves', 'We', 'Our' and 'Us', refers to our Company.
+          'Party', 'Parties', or 'Us', refers to both the Client [buyer],Vendor
+          and ourselves. All terms refer to the offer, acceptance and
+          consideration of payment necessary to undertake the process of our
+          assistance to the Client in the most appropriate manner for the
+          express purpose of meeting the Client's needs in respect of provision
+          of the Company's stated services, in accordance with and subject to,
+          prevailing law of India. Any use of the above terminology or other
+          words in the singular, plural, capitalization and/or he/she or they,
+          are taken as interchangeable and therefore as referring to same.
         </p>
+
+        <p>
+          Buying agency services are subject matter of solicitation. The
+          information provided in this website cannot substitute for the advice
+          of backend team or merchandising professionals. The information and
+          data provided on this website[www.infinitydesigns.co.in] is of a
+          general nature and strictly for informational and marketing purposes.
+          The [infinity designs] accepts no responsibility or liability for
+          decisions based whatsoever with regard to the information on this
+          website[www.infinitydesigns.co.in].
+        </p>
+
+        <p>
+          [Infinity designs] maintains this website[www.infinitydesigns.co.in]
+          to enhance client access and awareness to information about the export
+          related products like garments, scarves or home furnishing etc.
+          through licensed “Vendor “entities and their functions.
+          [www.infinitydesigns.co.in] goal is to keep this information timely
+          and accurate. If errors are brought to our attention, we will try to
+          correct them.
+        </p>
+
+        <p>
+          Use of Website [www.infinitydesigns.co.in] is not responsible for any
+          damages resulting from use of this website or our services by anyone.
+          You will not use the Website for illegal purposes. You will –
+        </p>
+        <ol className='list-decimal ml-12 mt-4'>
+          <li>
+            Abide by all applicable local, state, national, and international
+            laws and regulations in your use of the Website (including laws
+            regarding intellectual property).
+          </li>
+          <li>
+            Not interfere with or disrupt the use and enjoyment of the Website
+            by other users.
+          </li>
+          <li>Not resell material on the Website.</li>
+          <li>
+            Not engage, directly or indirectly, in transmission of "spam", chain
+            letters, junk mail or any other type of unsolicited communication,
+            and
+          </li>
+          <li>
+            Not defame, harass, abuse, or disrupt other users of the Website.
+          </li>
+        </ol>
 
         <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
           <strong>Cookies</strong>
@@ -67,81 +115,58 @@ export default function Vendor() {
         </p>
 
         <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
-          <strong>License</strong>
+          <strong>II. License</strong>
         </h3>
 
         <p>
           Unless otherwise stated, Infinity Designs and/or its licensors own the
           intellectual property rights for all material on infinitydesign.com.
-          All intellectual property rights are reserved. You may access this
-          from infinitydesign.com for your own personal use subjected to
-          restrictions set in these terms and conditions.
+          All intellectual property rights are reserved.
         </p>
-
-        <p>You must not:</p>
-        <ul>
-          <li>Republish material from infinitydesign.com</li>
-          <li>Sell, rent or sub-license material from infinitydesign.com</li>
-          <li>Reproduce, duplicate or copy material from infinitydesign.com</li>
-          <li>Redistribute content from infinitydesign.com</li>
-        </ul>
-
         <p>
-          This Agreement shall begin on the date hereof. Our Terms and
-          Conditions were created with the help of the{" "}
-          <a href='https://www.termsandconditionsgenerator.com/'>
-            Free Terms and Conditions Generator
-          </a>
-          .
+          By using this Website[www.infinitydesigns.co.in], you are granted a
+          limited, non-exclusive, nontransferable right to use the content and
+          materials on the Website in connection with your normal,
+          noncommercial, use of the Website. You may not copy, reproduce,
+          transmit, distribute, or create derivative works of such content or
+          information without express written authorization from
+          [www.infinitydesigns.co.in] or the applicable third party (if third
+          party content is at issue).
         </p>
-
         <p>
-          Parts of this website offer an opportunity for users to post and
-          exchange opinions and information in certain areas of the website.
-          Infinity Designs does not filter, edit, publish or review Comments
-          prior to their presence on the website. Comments do not reflect the
-          views and opinions of Infinity Designs,its agents and/or affiliates.
-          Comments reflect the views and opinions of the person who post their
-          views and opinions. To the extent permitted by applicable laws,
-          Infinity Designs shall not be liable for the Comments or for any
-          liability, damages or expenses caused and/or suffered as a result of
-          any use of and/or posting of and/or appearance of the Comments on this
-          website.
+          [www.infinitydesigns.co.in] does not have the ability to control the
+          nature of the user-generated content offered through the website. You
+          are solely responsible for your interactions with other users of the
+          website and any content you post.
         </p>
-
         <p>
+          [www.infinitydesigns.co.in] is not liable for any damage or harm
+          resulting from any posts by or interactions between users.
+          [www.infinitydesigns.co.in] reserves the right, but has no obligation,
+          to monitor interactions between and among users of the Website and to
+          remove any content [www.infinitydesigns.co.in] deems objectionable, in
+          sole discretion.
+        </p>
+        <p className='mt-3'>
+          This information is: - <br /> <br /> of a general nature only & is not
+          intended to address specific circumstances of any particular
+          individual or to an entity.
+          <br /> <br /> not necessarily comprehensive, complete, accurate or up
+          to date; not professional or legal advice if you need specific advice,
+          you should always consult suitable qualified experienced
+          professionals.
+          <br /> <br /> the website. www.infinitydesigns.co.in does not filter,
+          edit, publish or review comments prior to their presence on the
+          website. Comments do not reflect the views and opinions of Infinity
+          Designs, its agents and/or affiliates. Comments reflect the views and
+          opinions of the person who post their views and opinions. To the
+          extent permitted by applicable laws, Infinity Designs shall not be
+          liable for the Comments or for any liability, damages or expenses
+          caused and/or suffered as a result of any use of and/or posting of
+          and/or appearance of the Comments on this website. <br /> <br />
           Infinity Designs reserves the right to monitor all Comments and to
           remove any Comments which can be considered inappropriate, offensive
           or causes breach of these Terms and Conditions.
-        </p>
-
-        <p>You warrant and represent that:</p>
-
-        <ul>
-          <li>
-            You are entitled to post the Comments on our website and have all
-            necessary licenses and consents to do so;
-          </li>
-          <li>
-            The Comments do not invade any intellectual property right,
-            including without limitation copyright, patent or trademark of any
-            third party;
-          </li>
-          <li>
-            The Comments do not contain any defamatory, libelous, offensive,
-            indecent or otherwise unlawful material which is an invasion of
-            privacy
-          </li>
-          <li>
-            The Comments will not be used to solicit or promote business or
-            custom or present commercial activities or unlawful activity.
-          </li>
-        </ul>
-
-        <p>
-          You hereby grant Infinity Designs a non-exclusive license to use,
-          reproduce, edit and authorize others to use, reproduce and edit any of
-          your Comments in any and all forms, formats or media.
         </p>
 
         <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
@@ -153,7 +178,7 @@ export default function Vendor() {
           written approval:
         </p>
 
-        <ul>
+        <ul className='list-square ml-12 my-4'>
           <li>Government agencies;</li>
           <li>Search engines;</li>
           <li>News organizations;</li>
@@ -182,7 +207,7 @@ export default function Vendor() {
           types of organizations:
         </p>
 
-        <ul>
+        <ul className='ml-12 list-square my-4'>
           <li>commonly-known consumer and/or business information sources;</li>
           <li>dot.com community sites;</li>
           <li>associations or other groups representing charities;</li>
@@ -221,7 +246,7 @@ export default function Vendor() {
 
         <p>Approved organizations may hyperlink to our Website as follows:</p>
 
-        <ul>
+        <ul className='ml-12 list-square my-4'>
           <li>By use of our corporate name; or</li>
           <li>By use of the uniform resource locator being linked to; or</li>
           <li>
@@ -230,11 +255,6 @@ export default function Vendor() {
             party&apos;s site.
           </li>
         </ul>
-
-        <p>
-          No use of Infinity Designs&apos;s logo or other artwork will be
-          allowed for linking absent a trademark license agreement.
-        </p>
 
         <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
           <strong>iFrames</strong>
@@ -260,84 +280,288 @@ export default function Vendor() {
         </p>
 
         <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
-          <strong>Your Privacy</strong>
-        </h3>
-
-        <p>Please read Privacy Policy</p>
-
-        <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
-          <strong>Reservation of Rights</strong>
+          <strong>III. Privacy</strong>
         </h3>
 
         <p>
-          We reserve the right to request that you remove all links or any
-          particular link to our Website. You approve to immediately remove all
-          links to our Website upon request. We also reserve the right to amen
-          these terms and conditions and it&apos;s linking policy at any time.
-          By continuously linking to our Website, you agree to be bound to and
-          follow these linking terms and conditions.
+          www.infinitydesigns.co.in recognizes the importance of maintaining
+          your privacy. We value your privacy and appreciate your trust in us.
+          This Policy describes how we treat user information we collect on
+          website and other offline sources. This Privacy Policy applies to
+          current and former visitors to our website and to our online/ offline
+          client’s. By visiting and/or using our website and offline services,
+          you agree to this Privacy Policy.
         </p>
 
-        <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
-          <strong>Removal of links from our website</strong>
+        <h3 className='mt-8 mb-4 text-lg md:text-2xl'>
+          <strong>Information We Collect</strong>
         </h3>
 
-        <p>
-          If you find any link on our Website that is offensive for any reason,
-          you are free to contact and inform us any moment. We will consider
-          requests to remove links but we are not obligated to or so or to
-          respond to you directly.
-        </p>
-
-        <p>
-          We do not ensure that the information on this website is correct, we
-          do not warrant its completeness or accuracy; nor do we promise to
-          ensure that the website remains available or that the material on the
-          website is kept up to date.
-        </p>
-
-        <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
-          <strong>Disclaimer</strong>
-        </h3>
-
-        <p>
-          To the maximum extent permitted by applicable law, we exclude all
-          representations, warranties and conditions relating to our website and
-          the use of this website. Nothing in this disclaimer will:
-        </p>
-
-        <ul>
+        <ul className='ml-12 my-4 list-disc'>
           <li>
-            limit or exclude our or your liability for death or personal injury;
+            Contact information: - We might collect your name, email, mobile
+            number, phone number, street, city, state, pin code, country and ip
+            address
           </li>
           <li>
-            limit or exclude our or your liability for fraud or fraudulent
-            misrepresentation;
+            Information you post: -We collect information you post in a public
+            space on our website or on a third-party social media site belonging
+            to www.infinitydesigns.co.in
           </li>
           <li>
-            limit any of our or your liabilities in any way that is not
-            permitted under applicable law; or
+            Demographic information: - We may collect demographic information
+            about you, events you like, events you intend to participate in,
+            services you use, or any other information provided by your during
+            the use of our website. We might collect this as a part of a survey
+            also.
           </li>
           <li>
-            exclude any of our or your liabilities that may not be excluded
-            under applicable law.
+            Other information: -If you use our website, we may collect
+            information about your IP address and the browser you're using. We
+            might look at what site you came from, duration of time spent on our
+            website, pages accessed or what site you visit when you leave us. We
+            might also collect the type of mobile device you are using, or the
+            version of the operating system your computer or device is running.
+            operating system your computer or device is running.
           </li>
         </ul>
 
-        <p>
-          The limitations and prohibitions of liability set in this Section and
-          elsewhere in this disclaimer: (a) are subject to the preceding
-          paragraph; and (b) govern all liabilities arising under the
-          disclaimer, including liabilities arising in contract, in tort and for
-          breach of statutory duty.
-        </p>
+        <h3 className='mt-8 mb-4 text-lg md:text-2xl'>
+          <strong>We collect information in different ways</strong>
+        </h3>
+
+        <ul className='ml-12 my-4 list-disc'>
+          <li>
+            We collect information directly from you. We collect information
+            directly from you when you register for a Selection meeting or Place
+            orders with one of our Vendors for garments, scarves, accessories or
+            in home furnishing. We also collect information if you post a
+            comment on our websites or ask us a question through phone
+            /WhatsApp, Botim App or email.
+          </li>
+          <li>
+            We collect information from you passively. We use tracking tools
+            like Google Analytics, Google Webmaster, browser cookies and web
+            beacons for collecting information about your usage of our website.
+          </li>
+          <li>
+            We get information about you from third parties. For example, if you
+            use an integrated social media feature on our websites. The
+            third-party social media site will give us certain information about
+            you. This could include your name and email address.
+          </li>
+        </ul>
+
+        <h3 className='mt-8 mb-4 text-lg md:text-2xl'>
+          <strong>Use of your personal information</strong>
+        </h3>
+        <ul className='ml-12 my-4 list-disc'>
+          <li>
+            We use information to contact you:- We might use the information you
+            provide to contact you for confirmation of meeting’s or for other
+            promotional purposes or selection presentations.
+          </li>
+          <li>
+            We use information to respond to your requests or questions. We
+            might use your information to confirm your registration for any of
+            the services.
+          </li>
+          <li>
+            We use information to improve our “Vendor” products and services. We
+            might use your information to customize your experience with us.
+            This could include displaying content based upon your preferences.
+          </li>
+          <li>
+            We use information to look at site trends and customer interests. We
+            may use your information to make our website and products better
+            from our vendors. We may combine information we get from you with
+            information about you we get from third parties.
+          </li>
+          <li>
+            We use information for security purposes. We may use information to
+            protect our company, our buyers, or our websites.
+          </li>
+          <li>
+            We use information for marketing purposes. We might send you
+            information about new trends or offers. We might also tell you about
+            new products or styles. These might be our own offers products or
+            our vendor products we think you might find interesting. Or, for
+            example, if you are interested in buying ladies garments / kids
+            garments / scarves or home furnishing items through us, we'll enroll
+            you in our other products.
+          </li>
+          <li>
+            We use information to send you final confirmation communications. We
+            might send you emails or SMS /WhatsApp about your interest or on
+            final orders.
+          </li>
+          <li>We use information as otherwise permitted by law.</li>
+        </ul>
+
+        <h3 className='mt-8 mb-4 text-lg md:text-2xl'>
+          <strong>Sharing of information with third parties</strong>
+        </h3>
+
+        <ul className='ml-12 my-4 list-square'>
+          <li>
+            We will share information with third parties who perform services on
+            our behalf. We share information with vendors who help us manage our
+            product range process or payment processors or transactional message
+            processors, located within or outside of India.
+          </li>
+          <li>
+            We will share information with our business partners/event partners
+            in India or in other countries. This includes a third party who
+            provide or sponsor an event, or who operates a venue where we hold
+            events. Our partners use the information we give them as described
+            in their privacy policies.
+          </li>
+          <li>
+            We may share information if we think we have to in order to comply
+            with the law or to protect ourselves. We will share information to
+            respond to a court order or govt agency. We may also share it if a
+            government agency or investigatory body requests. Or, we might also
+            share information when we are investigating potential fraud or
+            breach of ethical policies, payment procedures etc.
+          </li>
+          <li>
+            We may share your information for reasons not described in this
+            policy. We will tell you before we do this.
+          </li>
+        </ul>
+
+        <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
+          <strong>Third Party Sites</strong>
+        </h3>
 
         <p>
-          As long as the website and the information and services on the website
-          are provided free of charge, we will not be liable for any loss or
-          damage of any nature.
+          If you click on one of the links to third party websites, you may be
+          taken to websites we do not control. This policy does not apply to the
+          privacy practices of those websites. Read the privacy policy of other
+          websites carefully. We are not responsible for these third-party
+          sites.
+        </p>
+
+        <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
+          <strong>Disclaimer of Warranties</strong>
+        </h3>
+
+        <p>
+          Without limiting the generality of the foregoing,
+          [www.infinitydesigns.co.in] makes no warranty: - that the links to
+          third – party websites are to information that is
+          accurate/reliable/complete or timely. No advice or information,
+          whether oral or written, obtained by you from this website will create
+          any warranty not expressly stated herein.
+        </p>
+
+        <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
+          <strong>Limitation of Liability</strong>
+        </h3>
+
+        <p>
+          Infinity design’s, [www.infinitydesigns.co.in] will not be liable for
+          any direct, indirect, incidental, special or consequential damages in
+          connection with this agreement or the products in any manner,
+          including liabilities. For at the time of order placements and at
+          order execution
+        </p>
+        <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
+          <strong>Updates to this policy</strong>
+        </h3>
+        <p>
+          This Privacy Policy was last updated on 20.11.2022. From time to time
+          we may change our privacy practices. We will notify you of any
+          material changes to this policy as required by law & post an updated
+          copy on our website. Please check our site periodically for updates.
+        </p>
+        <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
+          <strong>Agreement to be bound [online and offline]</strong>
+        </h3>
+        <p>
+          By using this Website [www.infinitydesigns.co.in] and our Services,
+          you acknowledge that you have read and agree to be bound by this
+          agreement and all terms and conditions on this website and offline
+          services.
+        </p>
+        <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
+          <strong>Termination.</strong>
+        </h3>
+        <p>
+          [Infinity designs] reserves the right to terminate your access to the
+          website if it reasonably believes, in its sole discretion, that you
+          have breached any of the terms and conditions of this Agreement.
+          Following termination, you will not be permitted to use the Website
+          [www.infinitydesigns.co.in] and [Infinity designs] may, in its sole
+          discretion and without advance notice to you, cancel your registration
+          and business contract with us. If your access to the Website is
+          terminated, [Infinity designs] reserves the right to exercise whatever
+          means it deems necessary to prevent unauthorized access of the
+          website. This agreement will survive indefinitely unless and until
+          [Infinity designs] chooses, in its sole discretion and without advance
+          to you, to terminate it.
+        </p>
+
+        <h3 className='mt-8 mb-4 text-xl md:text-3xl'>
+          <strong>Domestic and international Use- Disclaimer</strong>
+        </h3>
+        <p>
+          To the maximum extent permitted by applicable law, we exclude all
+          representations, warranties and conditions relating to our website and
+          the use of this website for services. Nothing in this disclaimer will:
+          limit or exclude our or your liability for death or personal injury;
+          limit or exclude our or your liability for fraud or fraudulent
+          misrepresentation. limit any of our or your liabilities in any way
+          that is not permitted under applicable law; or exclude any of our or
+          your liabilities that may not be excluded under applicable law. <br />{" "}
+          You may not assign your rights and obligations under this Agreement or
+          Vendor agreement to anyone. <br /> [Infinity designs] may assign its
+          rights and obligations under this agreement in its sole discretion and
+          without advance notice to you. In no event shall our staff and its
+          related, affiliated and subsidiary companies be liable for any direct,
+          indirect, special, incidental, or consequential damages arising out of
+          the limited contract review.
+        </p>
+        <p>
+          <strong>"Vendor"</strong> has to adhere policy code and conducts as
+          per Infinity designs i.e. Our client requirement’s Our team will
+          review vendor contracts and once identifying the significant clients’
+          obligations and advise you of any changes required in your current
+          selection processes, factory setup, compliance program to meet the
+          requirements of the contract with us.
+        </p>
+        <ul className='list-square ml-12 my-4'>
+          <li>
+            Also, it will be a regular process of evaluating the Vendor
+            performances, past performances will not give surety of future
+            business
+          </li>
+          <li>
+            A vendor will always be evaluated and rated based on
+            <ol className='list-decimal ml-24 my-2'>
+              <li>
+                Consistency of performance across all departments, cost, cash
+                and finance, communications of internal processes, clear
+                (Corporate social responsibility) and factory culture.{" "}
+              </li>
+              <li>Following transparent & ethical business practices.</li>
+            </ol>
+          </li>
+        </ul>
+        <p>
+          We infinity designs strongly suggest [Please read all the legal policy
+          documents and procedures carefully before signing all documents]. We
+          strongly suggest that all contracts ,Vendor Contracts to be reviewed
+          by your own legal counsel.
+        </p>
+        <p className='uppercase mt-3'>
+          DIGITAL ACKNOWLEGEMENT -BY USING THIS WEBSITE OR OUR SERVICES THROUGH
+          THIS WEBSITE OR OFFLINE YOU AGREE TO BE BOUND BY ALL OF THE TERMS AND
+          CONDITIONS OF THIS AGREEMENT.
         </p>
       </div>
+
+      <Footer />
     </div>
   );
 }

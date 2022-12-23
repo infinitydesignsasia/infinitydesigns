@@ -6,7 +6,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        head: ["Playfair Display"],
+      },
+      listStyleType: {
+        square: "square",
+      },
+    },
   },
   plugins: [],
 };

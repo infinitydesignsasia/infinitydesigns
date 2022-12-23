@@ -24,7 +24,7 @@ import {
   AiOutlineControl,
 } from "react-icons/ai";
 import { SiYourtraveldottv } from "react-icons/si";
-import { TbShirt } from "react-icons/tb";
+import { FaHome } from "react-icons/fa";
 import { IoMdContact, IoMdContacts } from "react-icons/io";
 import { RiWomenLine } from "react-icons/ri";
 import { GiGlobeRing } from "react-icons/gi";
@@ -103,9 +103,9 @@ const products = [
     icon: BiShoppingBag,
   },
   {
-    name: "Soft Goods",
+    name: "Home Furnishing",
     href: "/#our-products",
-    icon: TbShirt,
+    icon: FaHome,
   },
 ];
 
@@ -137,21 +137,21 @@ export default function Header() {
           <Popover.Group as='nav' className='hidden space-x-10 md:flex'>
             <Link
               href='/'
-              className='text-base font-medium text-gray-500 hover:text-gray-900 cursor-pointer'>
+              className='text-base font-semibold text-gray-500 hover:text-gray-900 cursor-pointer'>
               Home
             </Link>
-            <Link
+            <a
               href='#about-us'
-              className='text-base font-medium text-gray-500 hover:text-gray-900 cursor-pointer'>
+              className='text-base font-semibold text-gray-500 hover:text-gray-900 cursor-pointer'>
               About Us
-            </Link>
+            </a>
             <Popover className='relative'>
               {({ open }) => (
                 <>
                   <Popover.Button
                     className={classNames(
                       open ? "text-gray-900" : "text-gray-500",
-                      "group inline-flex items-center rounded-md bg-[#F7F5F2] text-base font-medium hover:text-gray-900 focus:outline-none"
+                      "group inline-flex items-center rounded-md bg-[#F7F5F2] text-base font-semibold hover:text-gray-900 focus:outline-none"
                     )}>
                     <span>Our Services</span>
                     <BiChevronDown
@@ -183,7 +183,7 @@ export default function Header() {
                               href={item.href}
                               className='-m-3 flex items-start rounded-lg p-3 py-1 hover:bg-gray-50'>
                               <item.icon
-                                className='h-6 w-6 flex-shrink-0 text-[#b2a4ff]'
+                                className='h-6 w-6 flex-shrink-0 text-[#9e7676]'
                                 aria-hidden='true'
                               />
                               <div className='ml-4'>
@@ -210,7 +210,7 @@ export default function Header() {
                   <Popover.Button
                     className={classNames(
                       open ? "text-gray-900" : "text-gray-500",
-                      "group inline-flex items-center rounded-md bg-[#F7F5F2] text-base font-medium hover:text-gray-900 focus:outline-none"
+                      "group inline-flex items-center rounded-md bg-[#F7F5F2] text-base font-semibold hover:text-gray-900 focus:outline-none"
                     )}>
                     <Link href='#our-products'>
                       <span>Our Products</span>
@@ -241,7 +241,7 @@ export default function Header() {
                               href={item.href}
                               className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'>
                               <item.icon
-                                className='h-6 w-6 flex-shrink-0 text-[#b2a4ff]'
+                                className='h-6 w-6 flex-shrink-0 text-[#9e7676]'
                                 aria-hidden='true'
                               />
                               <div className='ml-4'>
@@ -263,7 +263,7 @@ export default function Header() {
             </Popover>
             <a
               href='/careers'
-              className='text-base font-medium text-gray-500 hover:text-gray-900'>
+              className='text-base font-semibold text-gray-500 hover:text-gray-900'>
               Careers
             </a>
             {/* //Contact  */}
@@ -273,7 +273,7 @@ export default function Header() {
                   <Popover.Button
                     className={classNames(
                       open ? "text-gray-900" : "text-gray-500",
-                      "group inline-flex items-center rounded-md bg-[#F7F5F2] text-base font-medium hover:text-gray-900 focus:outline-none"
+                      "group inline-flex items-center rounded-md bg-[#F7F5F2] text-base font-semibold hover:text-gray-900 focus:outline-none"
                     )}>
                     <span>Contact Us</span>
                     <BiChevronDown
@@ -302,7 +302,7 @@ export default function Header() {
                               href={item.href}
                               className='-m-3 flex items-start rounded-lg p-3 py-2 hover:bg-gray-50'>
                               <item.icon
-                                className='h-6 w-6 flex-shrink-0 text-[#b2a4ff]'
+                                className='h-6 w-6 flex-shrink-0 text-[#9e7676]'
                                 aria-hidden='true'
                               />
                               <div className='ml-4'>
@@ -322,7 +322,7 @@ export default function Header() {
           </Popover.Group>
           <div className='hidden items-center justify-end lg:flex md:flex-1 lg:w-0 gap-8'>
             <a
-              href='#'
+              href='https://www.linkedin.com/company/infinitydesignsindia/'
               className='whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900'>
               <FaLinkedinIn />
             </a>
@@ -371,7 +371,7 @@ export default function Header() {
                         href={item.href}
                         className='-m-3 flex items-center rounded-md p-3 hover:bg-gray-50'>
                         <item.icon
-                          className='h-6 w-6 flex-shrink-0 text-[#eebe7a]'
+                          className='h-6 w-6 flex-shrink-0 text-[#9e7676]'
                           aria-hidden='true'
                         />
                         <span className='ml-3 text-base font-medium text-gray-900'>
@@ -425,7 +425,7 @@ export default function Header() {
                 <div>
                   <a
                     href='/buyer-contact'
-                    className='flex w-full items-center justify-center rounded-md border border-transparent bg-[#f3d7b0] px-4 py-2 text-base font-medium text-black shadow-sm hover:bg-[#efc78e]'>
+                    className='flex w-full items-center justify-center rounded-md border border-transparent bg-[#9e7676] px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-[#865e5e]'>
                     Buyer Contact
                   </a>
                 </div>

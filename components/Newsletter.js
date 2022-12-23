@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Subscribe from "./Subscribe";
 
 /* eslint-disable @next/next/no-img-element */
@@ -19,7 +20,7 @@ export default function Newsletter() {
               talk on your behalf.
             </p>
             <h1 className='pb-8 font-semibold text-[#ff5b00] text-2xl'>
-              Let&apos;s your soul meets fashion!
+              Let your soul meets fashion!
             </h1>
             <p className='font-bold pb-8 tracking-wide'>#infinitydesigns</p>
             {/* <a
@@ -27,6 +28,12 @@ export default function Newsletter() {
               className='border-black border-b-2 hover:text-[#ff5b00] hover:border-[#ff5b00] transition-colors'>
               Follow on us Instagram
             </a> */}
+            <button className='text-md bg-[#B2A4FF] px-4 py-2 text-[#FFf] rounded-lg mt-5 hover:bg-[#8b78f7]'>
+              <a href='/buyer-contact'>
+                Truly Fashionable <br />
+                Buyer Contact
+              </a>
+            </button>
           </div>
         </div>
       </section>

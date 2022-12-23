@@ -1,7 +1,5 @@
 import { Html, Main, NextScript, Head } from "next/document";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
-
 export default function Document() {
   return (
     <Html className='font-nunito'>
@@ -21,7 +19,7 @@ export default function Document() {
           rel='stylesheet'
         />
       </Head>
-      <body>
+      <body className=''>
         <Main />
         <NextScript />
       </body>

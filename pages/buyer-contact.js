@@ -2,6 +2,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Vendor() {
   return (
@@ -13,21 +14,39 @@ export default function Vendor() {
       </Head>
       <Header />
       <div className='bc-banner h-[400px] w-full relative'>
-        <h1 className='absolute left-0 right-0 bottom-36 flex justify-center items-center text-white text-4xl'>
-          Infinity Designs &#8212; Buyer Contact
+        <h1 className='absolute left-0 right-0 bottom-36 flex justify-center items-center text-white text-4xl md:text-6xl lg:text-8xl'>
+          Buyer Contact
         </h1>
       </div>
-      <div className='flex justify-center items-center mt-[60px] mb-[120px]'>
-        <iframe
-          src='https://share-eu1.hsforms.com/1l_6lUo_qRb-3sGzVi9EEAgfui2i'
-          width='640'
-          height='1300'
-          frameBorder='0'
-          marginHeight='0'
-          scrolling='no'
-          marginWeight='0'>
-          Loading…
-        </iframe>
+      <div className='flex justify-center px-2 lg:px-12 gap-8 mt-[60px] mb-[120px] lg:flex-row flex-col overflow-hidden'>
+        <div className='flex flex-col flex-1 items-center'>
+          <iframe
+            src='https://player.vimeo.com/video/773057641?h=2362a4cf4f'
+            width='640'
+            height='360'
+            frameborder='0'
+            allow='autoplay; fullscreen'
+            className='lg:mb-12 w-full'></iframe>
+          <div className='text-center'>
+            <h1 className='text-4xl font-bold tracking-wider mb-5'>
+              Making Stronger Connections
+            </h1>
+            <button className='bg-green-600 flex justify-center mx-auto gap-1 items-center text-white p-2 hover:bg-green-700 text-lg rounded-lg'>
+              Whatsapp Us
+              <FaWhatsapp />
+            </button>
+          </div>
+        </div>
+        <div className='flex-1'>
+          <iframe
+            src='https://share-eu1.hsforms.com/1l_6lUo_qRb-3sGzVi9EEAgfui2i'
+            width='740'
+            height='1368'
+            marginWeight='0'
+            className='w-full min-w-[318px] md:min-w-[568px]'>
+            Loading…
+          </iframe>
+        </div>
       </div>
       <Footer />
     </div>

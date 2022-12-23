@@ -12,6 +12,15 @@ export default function Careers() {
       </Head>
 
       <Header />
+      <div className='s-banner h-[400px] w-full relative'>
+        <h1 className='absolute left-0 right-0 px-8 bottom-44 flex justify-center items-center text-white font-semibold  text-4xl md:text-6xl lg:text-8xl mb-4'>
+          {/* Infinity Designs &#8212; Careers */}
+          Careers
+        </h1>
+        <p className='absolute left-0 right-0 px-8 bottom-32 flex justify-center items-center text-gray-200 text-md sm:text-lg md:text-xl'>
+          Having a career for you, become luckier with hard work.
+        </p>
+      </div>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 mt-[120px] flex justify-center items-center gap-16 flex-wrap'>
         <div className='flex gap-16 flex-wrap items-center justify-center'>
           <div className=''>
@@ -21,8 +30,15 @@ export default function Careers() {
               name='location'
               id='location'>
               <option value='alllocations'>All Locations</option>
-              <option value='delhi'>Delhi</option>
-              <option value='paris'>Paris</option>
+              <option value='delhi'>Delhi NCR</option>
+              <option value='fbd'>Faridabad</option>
+              <option value='ggn'>Gurugram</option>
+              <option value='noida'>Noida</option>
+              <option value='blr'>Bangalore</option>
+              <option value='tripur'>Tripur</option>
+              <option value='amritsar'>Amritsar</option>
+              <option value='mum'>Mumbai</option>
+              <option value='ben'>West Bengal</option>
             </select>
           </div>
           <div className=''>
@@ -32,8 +48,23 @@ export default function Careers() {
               name='category'
               id='category'>
               <option value='allcateg'>All Categories</option>
-              <option value='technical'>Technical</option>
-              <option value='nontech'>Non Technical</option>
+              <option value='des'>Designer</option>
+              <option value='srdes'>Sr. Designer</option>
+              <option value='assmer'>Asst Merchant</option>
+              <option value='merchant'>Merchant</option>
+              <option value='srmerchant'>Sr Merchant</option>
+              <option value='merchmgr'>Merchandising Manager</option>
+              <option value='qualass'>Quality Assurance</option>
+              <option value='qualctrl'>Quality Control</option>
+              <option value='pattmast'>Pattern Master</option>
+              <option value='shipexe'>Shipping Executive</option>
+              <option value='accexe'>Account Executive</option>
+              <option value='shipmgr'>Shipping Manager</option>
+              <option value='accmgr'>Account Manager</option>
+              <option value='offboy'>Office Boy</option>
+              <option value='hrmgr'>HR Manager</option>
+              <option value='offmgr'>Office Manager</option>
+              <option value='crrexe'>Courier Executive</option>
             </select>
           </div>
           <div className=''>
@@ -43,8 +74,23 @@ export default function Careers() {
               name='job'
               id='job'>
               <option value='alljobs'>All jobs</option>
-              <option value='1'>Job Type 1</option>
-              <option value='2'>JOb Type 2</option>
+              <option value='des'>Designer</option>
+              <option value='srdes'>Sr. Designer</option>
+              <option value='assmer'>Asst Merchant</option>
+              <option value='merchant'>Merchant</option>
+              <option value='srmerchant'>Sr Merchant</option>
+              <option value='merchmgr'>Merchandising Manager</option>
+              <option value='qualass'>Quality Assurance</option>
+              <option value='qualctrl'>Quality Control</option>
+              <option value='pattmast'>Pattern Master</option>
+              <option value='shipexe'>Shipping Executive</option>
+              <option value='accexe'>Account Executive</option>
+              <option value='shipmgr'>Shipping Manager</option>
+              <option value='accmgr'>Account Manager</option>
+              <option value='offboy'>Office Boy</option>
+              <option value='hrmgr'>HR Manager</option>
+              <option value='offmgr'>Office Manager</option>
+              <option value='crrexe'>Courier Executive</option>
             </select>
           </div>
         </div>

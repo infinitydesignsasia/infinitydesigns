@@ -212,7 +212,7 @@ export default function Header() {
                       open ? "text-gray-900" : "text-gray-500",
                       "group inline-flex items-center rounded-md bg-[#F7F5F2] text-base font-semibold hover:text-gray-900 focus:outline-none"
                     )}>
-                    <Link href='#our-products'>
+                    <Link href='/#our-products'>
                       <span>Our Products</span>
                     </Link>
                     <BiChevronDown

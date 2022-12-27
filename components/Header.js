@@ -116,7 +116,7 @@ function classNames(...classes) {
 export default function Header() {
   const router = useRouter();
   return (
-    <Popover className='sticky top-0 left-0 right-0 bg-[#F7F5F2] z-50'>
+    <Popover className='sticky top-0 left-0 right-0 bg-[#F7F5F2] z-[999999]'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6'>
         <div className='flex items-center justify-between py-6 md:justify-start md:space-x-10'>
           <div className='flex justify-start lg:w-0 lg:flex-1'>
@@ -362,9 +362,9 @@ export default function Header() {
                     </Popover.Button>
                   </div>
                 </div>
-                <div className='mt-6'>
-                  <nav className='grid gap-y-8'>
-                    <h1 className='text-lg font-medium'>Our Services</h1>
+                {/* <div className='mt-6'> */}
+                {/* <nav className='grid gap-y-8'> */}
+                {/* <h1 className='text-lg font-medium'>Our Services</h1>
                     {services.map((item) => (
                       <a
                         key={item.name}
@@ -378,46 +378,45 @@ export default function Header() {
                           {item.name}
                         </span>
                       </a>
-                    ))}
-                  </nav>
-                </div>
+                    ))} */}
+                {/* </nav> */}
+                {/* </div> */}
               </div>
               <div className='space-y-6 py-6 px-5'>
                 <div className='grid grid-cols-2 gap-y-4 gap-x-8'>
                   <Link
                     href='/'
-                    className='text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer'
-                    onClick={() => {
-                      router.replace("/#about-us");
-                      close();
-                    }}>
+                    onClick={() => close()}
+                    className='text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer'>
                     Home
                   </Link>
                   <Link
+                    href='/our-services'
+                    onClick={() => close()}
+                    className='text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer'>
+                    Our Services
+                  </Link>
+                  <Link
                     href='#about-us'
-                    className='text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer'
-                    onClick={() => {
-                      router.replace("/#about-us");
-                      close();
-                    }}>
+                    onClick={() => close()}
+                    className='text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer'>
                     About Us
                   </Link>
                   <Link
                     href='#our-products'
-                    className='text-base font-medium text-gray-900 hover:text-gray-700'
-                    onClick={() => {
-                      router.replace("/#our-products");
-                      close();
-                    }}>
+                    onClick={() => close()}
+                    className='text-base font-medium text-gray-900 hover:text-gray-700'>
                     Our Products
                   </Link>
                   <a
                     href='/terms-conditions'
+                    onClick={() => close()}
                     className='text-base font-medium text-gray-900 hover:text-gray-700'>
                     Terms & Conditions
                   </a>
                   <a
                     href='/careers'
+                    onClick={() => close()}
                     className='text-base font-medium text-gray-900 hover:text-gray-700'>
                     Careers
                   </a>
@@ -425,6 +424,7 @@ export default function Header() {
                 <div>
                   <a
                     href='/buyer-contact'
+                    onClick={() => close()}
                     className='flex w-full items-center justify-center rounded-md border border-transparent bg-[#9e7676] px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-[#865e5e]'>
                     Buyer Contact
                   </a>

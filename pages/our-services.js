@@ -24,7 +24,9 @@ export default function Services() {
           width='640'
           height='560'
           controls
-          className='mx-auto w-full max-w-3xl'>
+          className='mx-auto w-full max-w-3xl'
+          playsinline
+          autoplay>
           <source src='/videos/services.mp4' type='video/mp4'></source>
         </video>
         {/* <iframe

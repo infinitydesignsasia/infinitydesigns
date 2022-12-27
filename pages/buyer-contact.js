@@ -20,7 +20,7 @@ export default function Vendor() {
       </div>
       <div className='flex justify-center px-2 lg:px-12 gap-8 mt-[60px] mb-[120px] lg:flex-row flex-col overflow-hidden'>
         <div className='flex flex-col flex-1 items-center'>
-          <video width='640' height='360' controls>
+          <video width='640' height='360' controls playsinline autoplay>
             <source src='/videos/buyer.mp4' type='video/mp4'></source>
           </video>
           {/* <iframe
@@ -34,8 +34,10 @@ export default function Vendor() {
             <h1 className='text-4xl font-bold tracking-wider mb-5'>
               Making Stronger Connections
             </h1>
-            <button className='mt-8 bg-[#e8c085] flex justify-center mx-auto gap-1 items-center text-white p-2 hover:bg-[#e8b871] text-lg rounded-lg'>
-              <a href='https://share-eu1.hsforms.com/1l_6lUo_qRb-3sGzVi9EEAgfui2i'>
+            <button className='mt-8 bg-[#e8c085] flex justify-center mx-auto gap-1 items-center text-white p-2 hover:bg-[#] text-lg rounded-lg'>
+              <a
+                href='https://share-eu1.hsforms.com/1l_6lUo_qRb-3sGzVi9EEAgfui2i'
+                download='form'>
                 Download Form
               </a>
             </button>

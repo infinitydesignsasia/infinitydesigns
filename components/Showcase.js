@@ -17,8 +17,7 @@ const data = [
     id: 2,
     src: "/images/buyercontact1.JPG",
     category: "Buyer Contact",
-    title:
-      "Idea II Life II Elegance II Fun II Freedom II Clothes that will make you smile",
+    title: "Idea II Life II Elegance II Fun II Freedom II",
     button: "Let's Connect",
     rev: true,
   },
@@ -39,7 +38,7 @@ export default function Showcase() {
                 <img src={item.src} alt='' className='w-[400px] lg:w-[568px]' />
               ) : (
                 <div className='video-background'>
-                  <video width='640' height='120' controls>
+                  <video playsinline autoplay width='640' height='120' controls>
                     <source src='/videos/about.mp4' type='video/mp4'></source>
                   </video>
                 </div>
@@ -52,9 +51,18 @@ export default function Showcase() {
               <h1 className='text-[18px] md:text-[20px] lg:text-[30px] font-semibold mt-2 leading-[3.2rem]'>
                 {item.title}
               </h1>
-              <p className='block text-sm md:text-[17px] leading-6 text-gray-700 mt-5'>
-                <em>{item.description}</em>
-              </p>
+              {item.rev ? (
+                <h3 className='mt-8 mb-20 text-[18px] md:text-[20px] lg:text-[30px] font-semibold leading-[3.2rem]'>
+                  Clothes that will make you smile
+                </h3>
+              ) : (
+                ""
+              )}
+              {item.description && (
+                <p className='block text-sm md:text-[17px] leading-6 text-gray-700 mt-5'>
+                  <em>{item.description}</em>
+                </p>
+              )}
               {item.services ? (
                 <>
                   <h3 className='my-4 font-bold text-lg md:text-xl lg:text-2xl'>

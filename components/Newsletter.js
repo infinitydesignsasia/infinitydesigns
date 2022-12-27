@@ -6,17 +6,20 @@ export default function Newsletter() {
   return (
     <div className=''>
       <section className='max-w-7xl mx-auto px-4 sm:px-6 mt-[120px]'>
+        <h1 className='pb-8 font-semibold text-[#ff5b00] text-4xl my-8 lg:text-6xl w-full mx-auto flex justify-center'>
+          Let your soul meets fashion!
+        </h1>
         <div className='flex flex-wrap justify-between items-center'>
           <div className='group flex-[0 0 100%] lg:max-w-[45%] lg:flex-[0 0 45%] hover:scale-105 transition'>
-            <video width='640' height='360' controls>
+            <video width='640' height='360' controls playsinline autoplay>
               <source
-                src='/videos/vendor.mp4'
+                src='/videos/bc1.mp4'
                 type='video/mp4'
                 className='min-h-[420px] w-full h-full'></source>
             </video>
           </div>
           <div className='max-w-[100%] mt-[60px] lg:mt-0 flex-[0 0 100%] lg:max-w-[55%] lg:flex-[0 0 55%] xl:p-[100px] lg:p-[40px]'>
-            <h1 className='text-3xl font-bold mb-5 tracking-wide'>
+            <h1 className='text-4xl font-bold mb-5 tracking-wide'>
               Truly Fashionable
             </h1>
             <p className='text-gray-700 text-lg pb-8'>
@@ -24,10 +27,10 @@ export default function Newsletter() {
               you! Express the fashion with new clothes, new passion that will
               talk on your behalf.
             </p>
-            <h1 className='pb-8 font-semibold text-[#ff5b00] text-2xl'>
-              Let your soul meets fashion!
-            </h1>
-            <p className='font-bold pb-8 tracking-wide'>#infinitydesigns</p>
+
+            <p className='font-bold pb-8 text-2xl tracking-wide'>
+              #infinitydesigns
+            </p>
             <button className='text-md bg-[#e8c085] px-4 font-semibold py-2 flex justify-center mx-auto text-[#000] rounded-lg hover:bg-[#e8b871]'>
               <a href='/buyer-contact'>Buyer Contact</a>
             </button>

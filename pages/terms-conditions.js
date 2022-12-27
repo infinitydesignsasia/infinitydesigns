@@ -12,12 +12,14 @@ export default function Vendor() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
-      <div className='max-w-5xl mx-auto px-4 sm:px-6 my-[60px]'>
-        <h2 className='text-2xl md:text-4xl my-14'>
-          <strong>TERMS OF USER OF WEBSITE AND SERVICE AGREEMENT</strong>
-        </h2>
 
-        <div className='fixed bottom-[350px] w-full left-[300px] z-30 text-[60px] text-red-600 rotate-[-25deg] opacity-60'>
+      <div className='s-banner h-[400px] w-full relative z-[60]'>
+        <h1 className='max-w-5xl mx-auto absolute left-0 right-0 px-8 bottom-44 flex justify-center items-center text-white font-semibold text-center text-xl md:text-3xl lg:text-5xl mb-4'>
+          TERMS OF USER OF WEBSITE AND SERVICE AGREEMENT
+        </h1>
+      </div>
+      <div className='max-w-5xl mx-auto px-4 sm:px-6 my-[60px]'>
+        <div className='fixed bottom-[250px] mx-auto flex justify-center left-0 right-0 z-30 text-[20px] sm:text-[36px] whitespace-nowrap md:text-[48px] lg:text-[54px] text-red-600 rotate-[-25deg] opacity-60'>
           Infinity Designs - Do Not Copy
         </div>
 

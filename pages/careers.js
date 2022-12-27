@@ -17,7 +17,7 @@ export default function Careers() {
           {/* Infinity Designs &#8212; Careers */}
           Careers
         </h1>
-        <p className='absolute left-0 right-0 px-8 bottom-32 flex justify-center items-center text-gray-200 text-md sm:text-lg md:text-xl'>
+        <p className='text-center absolute left-0 right-0 px-8 bottom-32 flex justify-center items-center text-gray-200 text-md sm:text-lg md:text-xl'>
           Having a career for you, become luckier with hard work.
         </p>
       </div>

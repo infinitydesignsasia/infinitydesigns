@@ -1,9 +1,13 @@
 import "../styles/globals.css";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { useEffect, useState } from "react";
+import { BiMessageDetail } from "react-icons/bi";
+import { IoMdCall } from "react-icons/io";
+import { RiWhatsappFill } from "react-icons/ri";
 
 function MyApp({ Component, pageProps }) {
   const [hide, setHide] = useState(false);
+  const [msg, setMsg] = useState(false);
   const toggleVisibility = () => {
     if (window.pageYOffset > 300) {
       setHide(true);
@@ -55,6 +59,31 @@ function MyApp({ Component, pageProps }) {
           className='g-recaptcha-response w-[250px] h-[40px] border-2 border-[rgb(193, 193, 193)] my-[10px] mx-[25px] p-0 resize-none hidden'></textarea>
       </div>
       <iframe className='hidden'></iframe>
+
+      <div
+        className={`rounded-full w-16 h-16 bg-purple-600 fixed right-8 ${
+          msg ? "z-[100]" : "z-40"
+        }  bottom-5 hover:z-[70] cursor-pointer`}
+        onClick={() => setMsg(!msg)}>
+        <BiMessageDetail className='absolute right-[14px] z-50 w-9 h-9 text-white bottom-3' />
+        <div
+          className={`justify-center items-center gap-4 flex-col absolute bottom-20 right-[14px] ${
+            msg ? "flex" : "hidden"
+          }`}>
+          <div className='group flex justify-center items-center'>
+            <span className='hidden group-hover:block absolute whitespace-nowrap bg-[#eee] w-auto px-4 py-1 rounded right-12'>
+              Call Us
+            </span>
+            <IoMdCall className='w-10 h-10 text-blue-600' />
+          </div>
+          <div className='group flex justify-center items-center'>
+            <span className='hidden group-hover:block absolute whitespace-nowrap w-auto bg-[#eee] py-1 px-4 rounded right-12'>
+              Buyer Contact
+            </span>
+            <RiWhatsappFill className='w-10 h-10 text-green-800' />
+          </div>
+        </div>
+      </div>
     </>
   );
 }

@@ -3,7 +3,7 @@
 export default function Hero() {
   return (
     <section className='h-[668px]' id='home'>
-      <div className='hero w-full h-[668px] bg-center bg-no-repeat bg-contain '>
+      <div className='hero w-full h-[668px] bg-contain'>
         <div className='text-white flex justify-center flex-col h-full max-w-7xl px-4 sm:px-6 mx-auto text-left'>
           <h1 className='font-head text-[3.75rem] md:text-6xl md:leading-[1.25] font-extrabold z-30 tracking-wider'>
             Bringing the soul back to <br /> Fashion

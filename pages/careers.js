@@ -95,8 +95,12 @@ export default function Careers() {
           </div>
         </div>
         <div className='flex gap-16'>
-          <button className='px-4 py-2 bg-cyan-300'>Reset</button>
-          <button className='px-4 py-2 bg-cyan-300'>Filter</button>
+          <button className='px-4 py-2 bg-[#e8c085] hover:bg-[#e8b871]'>
+            Reset
+          </button>
+          <button className='px-4 py-2 bg-[#e8c085] hover:bg-[#e8b871]'>
+            Filter
+          </button>
         </div>
       </div>
 

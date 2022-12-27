@@ -20,13 +20,20 @@ export default function Services() {
         </h1>
       </div>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 mt-[120px] gap-16'>
-        <iframe
+        <video
+          width='640'
+          height='560'
+          controls
+          className='mx-auto w-full max-w-3xl'>
+          <source src='/videos/services.mp4' type='video/mp4'></source>
+        </video>
+        {/* <iframe
           src='https://player.vimeo.com/video/775050918?h=4f492c97e5'
           width='640'
           height='560'
           frameborder='0'
           className='w-full'
-          allow='autoplay; fullscreen'></iframe>
+          allow='autoplay; fullscreen'></iframe> */}
       </div>
       <ServicesNav />
       <Footer />

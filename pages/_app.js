@@ -31,9 +31,30 @@ function MyApp({ Component, pageProps }) {
         onClick={scrollToTop}
         className={`${
           hide ? "block" : "hidden"
-        } fixed right-2 bottom-5 bg-green-400 p-3 rounded-full hover:animate-pulse cursor-pointer`}>
+        } fixed right-14 z-50 bottom-5 bg-green-400 p-3 rounded-full hover:animate-pulse cursor-pointer`}>
         <AiOutlineArrowUp className='text-white text-[45px]' />
       </div>
+      <div
+        data-style='bottomright'
+        className='grecaptcha-badge w-[256px] h-[60px] overflow-hidden block fixed bottom-[14px] right-[-186px] hover:z-50 transition-all duration-300 hover:right-0 shadow-lg rounded-sm'>
+        <div class='grecaptcha-logo'>
+          <iframe
+            title='reCAPTCHA'
+            src='https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LevtA4cAAAAAKHdqZis3dPrdLAr4UweAn5k1sXq&amp;co=aHR0cHM6Ly90aGVpbmZpbml0eWJpei5jb206NDQz&amp;hl=en&amp;v=5qcenVbrhOy8zihcc2aHOWD4&amp;size=invisible&amp;cb=p9su4e234xop'
+            width='256'
+            height='80'
+            role='presentation'
+            name='a-aues1j6g7ix5'
+            frameborder='0'
+            sandbox='allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox'></iframe>
+        </div>
+        <div class='grecaptcha-error'></div>
+        <textarea
+          id='g-recaptcha-response-100000'
+          name='g-recaptcha-response'
+          className='g-recaptcha-response w-[250px] h-[40px] border-2 border-[rgb(193, 193, 193)] my-[10px] mx-[25px] p-0 resize-none hidden'></textarea>
+      </div>
+      <iframe className='hidden'></iframe>
     </>
   );
 }

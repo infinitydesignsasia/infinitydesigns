@@ -14,7 +14,7 @@ export default function Hero() {
             you smile
           </p> */}
           <div className='relative h-[54px] z-30 flex justify-start mt-5 items-center'>
-            <button className='bg-[#B2A4FF] hover:bg-[#8b78f7] text-white transition-all duration-300 px-4 py-2 rounded-lg'>
+            <button className='bg-[#a34e76] hover:bg-[#a1426e] text-white transition-all duration-300 px-4 py-2 rounded-lg'>
               <a href='/buyer-contact'>Buyer Contact</a>
             </button>
           </div>

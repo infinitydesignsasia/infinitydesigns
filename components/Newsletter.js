@@ -7,14 +7,19 @@ export default function Newsletter() {
     <div className=''>
       <section className='max-w-7xl mx-auto px-4 sm:px-6 mt-[120px]'>
         <div className='flex flex-wrap justify-between items-center'>
-          <div className='group flex-[0 0 100%] lg:max-w-[35%] lg:flex-[0 0 35%] hover:scale-105 transition'>
-            <img
-              src='/images/worldtrend.JPG'
-              alt=''
-              className='w-full h-full group-hover:-rotate-3 transition-all min-h-[360px]'></img>
+          <div className='group flex-[0 0 100%] lg:max-w-[45%] lg:flex-[0 0 45%] hover:scale-105 transition'>
+            <video width='640' height='360' controls>
+              <source
+                src='/videos/vendor.mp4'
+                type='video/mp4'
+                className='min-h-[420px] w-full h-full'></source>
+            </video>
           </div>
-          <div className='max-w-[100%] mt-[60px] lg:mt-0 flex-[0 0 100%] lg:max-w-[65%] lg:flex-[0 0 65%] xl:p-[100px] lg:p-[40px]'>
-            <p className='text-gray-600 pb-8'>
+          <div className='max-w-[100%] mt-[60px] lg:mt-0 flex-[0 0 100%] lg:max-w-[55%] lg:flex-[0 0 55%] xl:p-[100px] lg:p-[40px]'>
+            <h1 className='text-3xl font-bold mb-5 tracking-wide'>
+              Truly Fashionable
+            </h1>
+            <p className='text-gray-700 text-lg pb-8'>
               Every day is a fashion show and the world is your runway. So be
               you! Express the fashion with new clothes, new passion that will
               talk on your behalf.
@@ -23,16 +28,8 @@ export default function Newsletter() {
               Let your soul meets fashion!
             </h1>
             <p className='font-bold pb-8 tracking-wide'>#infinitydesigns</p>
-            {/* <a
-              href='https://instagram.com'
-              className='border-black border-b-2 hover:text-[#ff5b00] hover:border-[#ff5b00] transition-colors'>
-              Follow on us Instagram
-            </a> */}
-            <button className='text-md bg-[#B2A4FF] px-4 py-2 text-[#FFf] rounded-lg mt-5 hover:bg-[#8b78f7]'>
-              <a href='/buyer-contact'>
-                Truly Fashionable <br />
-                Buyer Contact
-              </a>
+            <button className='text-md bg-[#e8c085] px-4 font-semibold py-2 flex justify-center mx-auto text-[#000] rounded-lg hover:bg-[#e8b871]'>
+              <a href='/buyer-contact'>Buyer Contact</a>
             </button>
           </div>
         </div>

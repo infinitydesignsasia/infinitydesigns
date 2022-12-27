@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Subscribe from "./Subscribe";
-import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { FaHome, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 // import { AiOutlineArrowUp } from "react-icons/ai";
 
 export default function Footer() {
   return (
-    <div className='bg-[#F7F5F2] mt-[120px] relative'>
+    <div className='bg-[#F7F5F2] mt-[120px] relative z-50'>
       {/* <hr className='bg-black' /> */}
 
       <footer className='max-w-7xl mx-auto px-4 sm:px-6 text-center lg:text-left text-black'>
@@ -39,7 +39,7 @@ export default function Footer() {
                 Useful links
               </h6>
               <p className='mb-4'>
-                <a href='/#about' className='text-black'>
+                <a href='/#about-us' className='text-black'>
                   About Us
                 </a>
               </p>
@@ -58,6 +58,10 @@ export default function Footer() {
               <h6 className='font-semibold mb-4 flex justify-center md:justify-start'>
                 Corporate Office
               </h6>
+              <p className='mb-2'>
+                Uf16A Ozone Centre, Sector 12 Near district court, Faridabad
+                121007 Haryana India
+              </p>
               <div>
                 <h1 className='font-semibold'>Open Hours</h1>
                 <p className='flex items-center justify-center md:justify-start mb-4'>

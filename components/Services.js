@@ -20,13 +20,15 @@ export default function ServicesNav() {
 
   return (
     <div className='max-w-7xl mx-auto px-4 sm:px-6 mt-[120px] gap-16'>
-      <nav className='flex justify-between items-center font-semibold overflow-auto gap-8 whitespace-nowrap'>
+      <nav className='text-xl flex justify-between items-center font-semibold overflow-auto gap-8 whitespace-nowrap'>
         <div>
           <button
             onClick={() => {
               setTab({ a: true });
             }}
-            className={`${tab.a ? "text-black" : "text-gray-700"}`}>
+            className={`${
+              tab.a ? "bg-[#e8b871]" : "bg-[#e8c085]"
+            } hover:bg-[#e8b871] px-3 py-1 rounded-lg`}>
             Designing
           </button>
         </div>
@@ -35,7 +37,9 @@ export default function ServicesNav() {
             onClick={() => {
               setTab({ b: true });
             }}
-            className={`${tab.b ? "text-black" : "text-gray-700"}`}>
+            className={`${
+              tab.b ? "bg-[#e8b871]" : "bg-[#e8c085]"
+            } hover:bg-[#e8b871] px-3 py-1 rounded-lg`}>
             Production Development
           </button>
         </div>
@@ -44,7 +48,9 @@ export default function ServicesNav() {
             onClick={() => {
               setTab({ c: true });
             }}
-            className={`${tab.c ? "text-black" : "text-gray-700"}`}>
+            className={`${
+              tab.c ? "bg-[#e8b871]" : "bg-[#e8c085]"
+            } hover:bg-[#e8b871] px-3 py-1 rounded-lg`}>
             Production & Quality
           </button>
         </div>
@@ -53,7 +59,9 @@ export default function ServicesNav() {
             onClick={() => {
               setTab({ d: true });
             }}
-            className={`${tab.d ? "text-black" : "text-gray-700"}`}>
+            className={`${
+              tab.d ? "bg-[#e8b871]" : "bg-[#e8c085]"
+            } hover:bg-[#e8b871] px-3 py-1 rounded-lg`}>
             Quality Control
           </button>
         </div>
@@ -62,7 +70,9 @@ export default function ServicesNav() {
             onClick={() => {
               setTab({ e: true });
             }}
-            className={`${tab.e ? "text-black" : "text-gray-700"}`}>
+            className={`${
+              tab.e ? "bg-[#e8b871]" : "bg-[#e8c085]"
+            } hover:bg-[#e8b871] px-3 py-1 rounded-lg`}>
             Logistics
           </button>
         </div>

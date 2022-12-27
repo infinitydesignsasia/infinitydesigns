@@ -20,20 +20,24 @@ export default function Vendor() {
       </div>
       <div className='flex justify-center px-2 lg:px-12 gap-8 mt-[60px] mb-[120px] lg:flex-row flex-col overflow-hidden'>
         <div className='flex flex-col flex-1 items-center'>
-          <iframe
+          <video width='640' height='360' controls>
+            <source src='/videos/buyer.mp4' type='video/mp4'></source>
+          </video>
+          {/* <iframe
             src='https://player.vimeo.com/video/773057641?h=2362a4cf4f'
             width='640'
             height='360'
             frameborder='0'
             allow='autoplay; fullscreen'
-            className='lg:mb-12 w-full'></iframe>
-          <div className='text-center'>
+            className='lg:mb-12 w-full'></iframe> */}
+          <div className='text-center mt-[50px]'>
             <h1 className='text-4xl font-bold tracking-wider mb-5'>
               Making Stronger Connections
             </h1>
-            <button className='bg-green-600 flex justify-center mx-auto gap-1 items-center text-white p-2 hover:bg-green-700 text-lg rounded-lg'>
-              Whatsapp Us
-              <FaWhatsapp />
+            <button className='mt-8 bg-[#e8c085] flex justify-center mx-auto gap-1 items-center text-white p-2 hover:bg-[#e8b871] text-lg rounded-lg'>
+              <a href='https://share-eu1.hsforms.com/1l_6lUo_qRb-3sGzVi9EEAgfui2i'>
+                Download Form
+              </a>
             </button>
           </div>
         </div>

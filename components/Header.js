@@ -141,7 +141,7 @@ export default function Header() {
               Home
             </Link>
             <a
-              href='#about-us'
+              href='/#about-us'
               className='text-base font-semibold text-gray-500 hover:text-gray-900 cursor-pointer'>
               About Us
             </a>

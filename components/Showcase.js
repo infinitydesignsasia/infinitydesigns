@@ -39,21 +39,20 @@ export default function Showcase() {
                 <img src={item.src} alt='' className='w-[400px] lg:w-[568px]' />
               ) : (
                 <div className='video-background'>
-                  <iframe
-                    src='https://player.vimeo.com/video/770610537?h=d14a516ebb'
-                    allow='autoplay; fullscreen'
-                    className='h-full w-full m-0 p-0'></iframe>
+                  <video width='640' height='120' controls>
+                    <source src='/videos/about.mp4' type='video/mp4'></source>
+                  </video>
                 </div>
               )}
             </div>
             <div className='max-w-xl'>
-              <p className='text-sm md:text-md text-[#FFABE1] font-bold tracking-wide uppercase'>
+              <p className='text-sm md:text-md text-[#a34e76] font-bold tracking-wide uppercase'>
                 {item.category}
               </p>
-              <h1 className='text-lg md:text-xl lg:text-3xl font-semibold mt-2'>
+              <h1 className='text-[18px] md:text-[20px] lg:text-[30px] font-semibold mt-2 leading-[3.2rem]'>
                 {item.title}
               </h1>
-              <p className='block text-sm md:text-[16px] leading-6 text-gray-600 mt-5'>
+              <p className='block text-sm md:text-[17px] leading-6 text-gray-700 mt-5'>
                 <em>{item.description}</em>
               </p>
               {item.services ? (
@@ -79,7 +78,7 @@ export default function Showcase() {
               ) : (
                 ""
               )}
-              <button className='text-md bg-[#B2A4FF] px-4 py-2 text-[#FFf] rounded-lg mt-5 hover:bg-[#8b78f7]'>
+              <button className='text-md bg-[#e8c085] px-4 py-2 text-[#000] font-semibold rounded-lg mt-8 hover:bg-[#e8b871] mx-auto flex justify-center'>
                 <a href='/buyer-contact'>{item.button}</a>
               </button>
             </div>

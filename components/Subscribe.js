@@ -16,7 +16,7 @@ export default function Subscribe() {
           />
 
           <button
-            className='mt-3 px-2 py-1 text-[14px] mx-auto bg-yellow-400'
+            className='mt-3 px-2 py-1 text-[14px] mx-auto bg-[#e8c085] hover:bg-[#e8b871]'
             type='submit'>
             SIGN UP
           </button>

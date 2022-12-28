@@ -41,6 +41,9 @@ export default function Vendor() {
                 Download Form
               </a>
             </button>
+            <button className='mt-8 bg-[#e8c085] flex justify-center mx-auto gap-1 items-center text-white p-2 hover:bg-[#] text-lg rounded-lg'>
+              <a href='#'>Whatsapp</a>
+            </button>
           </div>
         </div>
         <div className='flex-1'>

@@ -13,6 +13,15 @@ module.exports = {
       listStyleType: {
         square: "square",
       },
+      animation: {
+        marquee: "marquee 15s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(70%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
     },
   },
   plugins: [],

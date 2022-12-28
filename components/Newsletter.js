@@ -6,12 +6,18 @@ export default function Newsletter() {
   return (
     <div className=''>
       <section className='max-w-7xl mx-auto px-4 sm:px-6 mt-[120px]'>
-        <h1 className='pb-8 font-semibold text-[#ff5b00] text-4xl my-8 lg:text-6xl w-full mx-auto flex justify-center'>
+        <h1 className='pb-8 whitespace-nowrap font-semibold text-[#ff5b00] px-8 text-[24px] my-8 md:text-5xl lg:text-6xl w-full mx-auto flex justify-center'>
           Let your soul meets fashion!
         </h1>
         <div className='flex flex-wrap justify-between items-center'>
           <div className='group flex-[0 0 100%] lg:max-w-[45%] lg:flex-[0 0 45%] hover:scale-105 transition'>
-            <video width='640' height='360' controls playsinline autoplay>
+            <video
+              width='640'
+              height='360'
+              controls
+              playsInline
+              autoPlay
+              poster='/posters/bc1.png'>
               <source
                 src='/videos/bc1.mp4'
                 type='video/mp4'

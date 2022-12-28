@@ -17,7 +17,8 @@ const data = [
     id: 2,
     src: "/images/buyercontact1.JPG",
     category: "Buyer Contact",
-    title: "Idea II Life II Elegance II Fun II Freedom II",
+    title: "Idea II Life II Elegance II Fun II Freedom",
+    description: "Every outfit counts change the way to wear",
     button: "Let's Connect",
     rev: true,
   },
@@ -38,7 +39,13 @@ export default function Showcase() {
                 <img src={item.src} alt='' className='w-[400px] lg:w-[568px]' />
               ) : (
                 <div className='video-background'>
-                  <video playsinline autoplay width='640' height='120' controls>
+                  <video
+                    playsinline
+                    autoplay
+                    width='640'
+                    height='120'
+                    controls
+                    poster='/posters/about.png'>
                     <source src='/videos/about.mp4' type='video/mp4'></source>
                   </video>
                 </div>
@@ -51,17 +58,17 @@ export default function Showcase() {
               <h1 className='text-[18px] md:text-[20px] lg:text-[30px] font-semibold mt-2 leading-[3.2rem]'>
                 {item.title}
               </h1>
-              {item.rev ? (
-                <h3 className='mt-8 mb-20 text-[18px] md:text-[20px] lg:text-[30px] font-semibold leading-[3.2rem]'>
-                  Clothes that will make you smile
-                </h3>
-              ) : (
-                ""
-              )}
               {item.description && (
-                <p className='block text-sm md:text-[17px] leading-6 text-gray-700 mt-5'>
+                <p className='block text-sm md:text-[19px] leading-8 text-gray-700 mt-5 mb-4'>
                   <em>{item.description}</em>
                 </p>
+              )}
+              {item.rev ? (
+                <p className='font-bold pb-8 text-2xl tracking-wide'>
+                  #PassionForFashion
+                </p>
+              ) : (
+                ""
               )}
               {item.services ? (
                 <>
@@ -86,7 +93,8 @@ export default function Showcase() {
               ) : (
                 ""
               )}
-              <button className='text-md bg-[#e8c085] px-4 py-2 text-[#000] font-semibold rounded-lg mt-8 hover:bg-[#e8b871] mx-auto flex justify-center'>
+              <button
+                className={`text-lg bg-[#e8c085] p-5 text-[#000] font-semibold rounded-lg mt-8 hover:bg-[#e8b871] mx-auto flex justify-center`}>
                 <a href='/buyer-contact'>{item.button}</a>
               </button>
             </div>

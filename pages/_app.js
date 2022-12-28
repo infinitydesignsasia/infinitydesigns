@@ -72,7 +72,7 @@ function MyApp({ Component, pageProps }) {
           }`}>
           <div className='group flex justify-center items-center'>
             <span className='hidden group-hover:block absolute whitespace-nowrap bg-[#eee] w-auto px-4 py-1 rounded right-12'>
-              Call Us
+              Buyer Contact
             </span>
             <IoMdCall className='w-10 h-10 text-blue-600' />
           </div>

@@ -431,7 +431,7 @@ export default function Header() {
                       Buyer Contact
                     </a>
                     <a
-                      href='/buyer-contact'
+                      href='/vendor-contact'
                       onClick={() => close()}
                       className='flex w-1/2 items-center justify-center rounded-md border border-transparent bg-[#fff] px-3 py-2 text-sm font-medium text-[#9e7676] shadow-sm hover:bg-[#eee]'>
                       Vendor Contact

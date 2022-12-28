@@ -42,8 +42,8 @@ export default function Vendor() {
                 Download Form
               </a>
             </button> */}
-            <button className='mt-8 bg-[#e8c085] flex justify-center mx-auto gap-1 items-center text-white py-3 px-6 hover:bg-[#e8b871] text-xl rounded-lg'>
-              <a href='#'>Whatsapp</a>
+            <button className='mt-8 bg-[#e8c085] flex justify-center mx-auto gap-1 items-center text-black py-3 px-6 hover:bg-[#e8b871] text-xl rounded-lg'>
+              <a href='#'>Whatsapp Us</a>
             </button>
           </div>
         </div>

@@ -31,7 +31,7 @@ export default function Showcase() {
           <section
             key={item.id}
             id={item.idName}
-            className={`flex justify-between items-center flex-wrap mt-32 gap-8 ${
+            className={`flex justify-center md:justify-between items-center flex-wrap mt-32 gap-8 md:${
               item.rev ? "flex-row-reverse" : "flex-row"
             }`}>
             <div className='w-[400px] lg:w-[568px] box'>
@@ -40,8 +40,8 @@ export default function Showcase() {
               ) : (
                 <div className='video-background'>
                   <video
-                    playsinline
-                    autoplay
+                    playsInline
+                    autoPlay
                     width='640'
                     height='120'
                     controls
@@ -55,14 +55,14 @@ export default function Showcase() {
               <p className='text-sm md:text-md text-[#a34e76] font-bold tracking-wide uppercase'>
                 {item.category}
               </p>
-              <h1 className='text-[20px] whitespace-nowrap md:text-[20px] lg:text-[30px] font-semibold mt-2 md:leading-[3.2rem]'>
+              <h1 className='text-[16px] whitespace-nowrap md:text-[20px] lg:text-[30px] font-semibold mt-2 md:leading-[3.2rem]'>
                 {item.title}
               </h1>
-              {item.description && (
-                <p className='block text-[16px] md:text-[19px] leading-8 text-gray-700 mt-5 mb-4'>
-                  <em>{item.description}</em>
-                </p>
-              )}
+
+              <p className='w-full block text-[15px] md:text-[19px] leading-8 text-gray-700 mt-5 mb-4'>
+                <em>{item.description}</em>
+              </p>
+
               {item.rev ? (
                 <p className='font-bold py-3 text-lg md:text-2xl tracking-wide'>
                   #PassionForFashion

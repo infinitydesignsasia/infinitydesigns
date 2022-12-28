@@ -43,7 +43,7 @@ export default function Products() {
       className='max-w-7xl mx-auto px-4 sm:px-6 mt-[120px]'
       id='our-products'>
       <div className='text-center my-16'>
-        <h1 className='text-5xl font-bold'>Our Products</h1>
+        <h1 className='text-3xl md:text-5xl font-bold'>Our Products</h1>
         <p className='text-black text-lg font-medium my-8'>
           Clothes that will make you smile.
         </p>

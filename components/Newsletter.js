@@ -25,7 +25,7 @@ export default function Newsletter() {
             </video>
           </div>
           <div className='max-w-[100%] mt-[60px] lg:mt-0 flex-[0 0 100%] lg:max-w-[55%] lg:flex-[0 0 55%] xl:p-[100px] lg:p-[40px]'>
-            <h1 className='text-4xl font-bold mb-5 tracking-wide'>
+            <h1 className='text-3xl md:text-4xl font-bold mb-5 tracking-wide'>
               Truly Fashionable
             </h1>
             <p className='text-gray-700 text-lg pb-8'>
@@ -34,7 +34,7 @@ export default function Newsletter() {
               talk on your behalf.
             </p>
 
-            <p className='font-bold pb-8 text-2xl tracking-wide'>
+            <p className='font-bold pb-8 text-lg md:text-2xl tracking-wide'>
               #infinitydesigns
             </p>
             <button className='text-md bg-[#e8c085] px-4 font-semibold py-2 flex justify-center mx-auto text-[#000] rounded-lg hover:bg-[#e8b871]'>

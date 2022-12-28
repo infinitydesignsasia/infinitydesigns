@@ -55,7 +55,7 @@ export default function Showcase() {
               <p className='text-sm md:text-md text-[#a34e76] font-bold tracking-wide uppercase'>
                 {item.category}
               </p>
-              <h1 className='text-[18px] md:text-[20px] lg:text-[30px] font-semibold mt-2 leading-[3.2rem]'>
+              <h1 className='text-[16px] whitespace-nowrap md:text-[20px] lg:text-[30px] font-semibold mt-2 md:leading-[3.2rem]'>
                 {item.title}
               </h1>
               {item.description && (
@@ -64,7 +64,7 @@ export default function Showcase() {
                 </p>
               )}
               {item.rev ? (
-                <p className='font-bold pb-8 text-2xl tracking-wide'>
+                <p className='font-bold py-3 text-lg md:text-2xl tracking-wide'>
                   #PassionForFashion
                 </p>
               ) : (
@@ -94,7 +94,7 @@ export default function Showcase() {
                 ""
               )}
               <button
-                className={`text-lg bg-[#e8c085] p-5 text-[#000] font-semibold rounded-lg mt-8 hover:bg-[#e8b871] mx-auto flex justify-center`}>
+                className={`text-lg bg-[#e8c085] py-2 px-5 md:py-3 md:px-5 text-[#000] font-semibold rounded-lg mt-4 md:mt-8 hover:bg-[#e8b871] mx-auto flex justify-center`}>
                 <a href='/buyer-contact'>{item.button}</a>
               </button>
             </div>

@@ -29,7 +29,11 @@ export default function Footer() {
         <div className='py-10 text-center md:text-left'>
           <div className='grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
             <div className=''>
-              <img src='/images/logo.jpg' alt='logo' className='w-36 mb-4' />
+              <img
+                src='/images/logo.jpg'
+                alt='logo'
+                className='w-36 mb-4 mx-auto md:mx-0'
+              />
               <p>Clothes for your best movements</p>
             </div>
             <Subscribe />

@@ -55,11 +55,11 @@ export default function Showcase() {
               <p className='text-sm md:text-md text-[#a34e76] font-bold tracking-wide uppercase'>
                 {item.category}
               </p>
-              <h1 className='text-[16px] whitespace-nowrap md:text-[20px] lg:text-[30px] font-semibold mt-2 md:leading-[3.2rem]'>
+              <h1 className='text-[20px] whitespace-nowrap md:text-[20px] lg:text-[30px] font-semibold mt-2 md:leading-[3.2rem]'>
                 {item.title}
               </h1>
               {item.description && (
-                <p className='block text-sm md:text-[19px] leading-8 text-gray-700 mt-5 mb-4'>
+                <p className='block text-[16px] md:text-[19px] leading-8 text-gray-700 mt-5 mb-4'>
                   <em>{item.description}</em>
                 </p>
               )}

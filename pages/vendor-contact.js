@@ -1,6 +1,10 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import {
+  BsFillArrowRightCircleFill,
+  BsFillArrowDownCircleFill,
+} from "react-icons/bs";
 
 export default function Vendor() {
   return (
@@ -33,10 +37,12 @@ export default function Vendor() {
               We believe suppliers to engage in transparent & ethical business
               practices.
             </h1>
-            <button className='mt-8 bg-[#e8c085] flex justify-center mx-auto gap-1 items-center text-white p-2 hover:bg-[#e8b871] text-lg rounded-lg'>
-              <a href='https://share-eu1.hsforms.com/1M0vmMuJhT-OqEw-iU9JdCwfui2i'>
-                Download Form
-              </a>
+            <button className='mt-8 bg-[#e8c085] flex justify-center mx-auto gap-1 items-center text-white py-3 px-5 hover:bg-[#e8b871] text-lg rounded-lg'>
+              <span className='flex justify-center gap-3 items-center'>
+                Please complete the form{" "}
+                <BsFillArrowRightCircleFill className='hidden md:block' />
+                <BsFillArrowDownCircleFill className='md:hidden block' />
+              </span>
             </button>
           </div>
         </div>
@@ -44,7 +50,8 @@ export default function Vendor() {
           <iframe
             src='https://share-eu1.hsforms.com/1M0vmMuJhT-OqEw-iU9JdCwfui2i'
             width='640'
-            height='1500'>
+            height='1920'
+            className='max-w-full mx-auto min-h-full'>
             Loading…
           </iframe>
         </div>

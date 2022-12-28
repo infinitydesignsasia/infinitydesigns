@@ -14,7 +14,7 @@ module.exports = {
         square: "square",
       },
       animation: {
-        marquee: "marquee 15s linear infinite",
+        marquee: "marquee 20s linear infinite",
       },
       keyframes: {
         marquee: {

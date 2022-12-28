@@ -25,8 +25,8 @@ export default function Services() {
           height='560'
           controls
           className='mx-auto w-full max-w-3xl'
-          playsinline
-          autoplay>
+          playsInline
+          poster='/posters/services.png'>
           <source src='/videos/services.mp4' type='video/mp4'></source>
         </video>
         {/* <iframe

@@ -26,6 +26,7 @@ export default function Services() {
           controls
           className='mx-auto w-full max-w-3xl'
           playsInline
+          autoPlay
           poster='/posters/services.png'>
           <source src='/videos/services.mp4' type='video/mp4'></source>
         </video>

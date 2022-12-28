@@ -31,7 +31,7 @@ export default function Showcase() {
           <section
             key={item.id}
             id={item.idName}
-            className={`flex justify-center md:justify-between items-center flex-wrap mt-32 gap-8 md:${
+            className={`flex justify-center md:justify-between items-center flex-wrap mt-32 gap-8 ${
               item.rev ? "flex-row-reverse" : "flex-row"
             }`}>
             <div className='w-[400px] lg:w-[568px] box'>
@@ -41,7 +41,6 @@ export default function Showcase() {
                 <div className='video-background'>
                   <video
                     playsInline
-                    autoPlay
                     width='640'
                     height='120'
                     controls

@@ -423,12 +423,18 @@ export default function Header() {
                       Careers
                     </a>
                   </div>
-                  <div>
+                  <div className='gap-2 flex justify-center items-center'>
                     <a
                       href='/buyer-contact'
                       onClick={() => close()}
-                      className='flex w-full items-center justify-center rounded-md border border-transparent bg-[#9e7676] px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-[#865e5e]'>
+                      className='text-sm flex w-1/2 items-center justify-center rounded-md border border-transparent bg-[#9e7676] px-3 py-2 font-medium text-white shadow-sm hover:bg-[#865e5e]'>
                       Buyer Contact
+                    </a>
+                    <a
+                      href='/buyer-contact'
+                      onClick={() => close()}
+                      className='flex w-1/2 items-center justify-center rounded-md border border-transparent bg-[#fff] px-3 py-2 text-sm font-medium text-[#9e7676] shadow-sm hover:bg-[#eee]'>
+                      Vendor Contact
                     </a>
                   </div>
                 </div>

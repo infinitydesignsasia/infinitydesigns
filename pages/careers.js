@@ -103,7 +103,6 @@ export default function Careers() {
           </button>
         </div>
         <div className='absolute font-semibold bottom-[-100px] mx-auto text-center left-0 right-0 w-full'>
-          <p className='my-2'>For more information contact</p>
           <a
             className='font-bold border-b border-black mb-8'
             href='mailto:hr@infinitydesigns.co.in'>

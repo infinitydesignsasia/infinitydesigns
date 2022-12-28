@@ -16,7 +16,6 @@ export default function Newsletter() {
               height='360'
               controls
               playsInline
-              autoPlay
               poster='/posters/bc1.png'>
               <source
                 src='/videos/bc1.mp4'

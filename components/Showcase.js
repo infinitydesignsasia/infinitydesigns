@@ -64,7 +64,7 @@ export default function Showcase() {
 
               {item.rev ? (
                 <p className='font-bold py-3 text-lg md:text-2xl tracking-wide'>
-                  #PassionForFashion
+                  #Passion For Fashion
                 </p>
               ) : (
                 ""

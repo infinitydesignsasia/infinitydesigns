@@ -15,7 +15,6 @@ export default function Services() {
       <Header />
       <div className='s-banner h-[400px] w-full relative'>
         <h1 className='absolute left-0 right-0 px-8 bottom-36 flex justify-center items-center text-white text-4xl md:text-6xl lg:text-8xl'>
-          {/* Infinity Designs &#8212; Our Services */}
           Our Services
         </h1>
       </div>
@@ -30,13 +29,6 @@ export default function Services() {
           poster='/posters/services.png'>
           <source src='/videos/services.mp4' type='video/mp4'></source>
         </video>
-        {/* <iframe
-          src='https://player.vimeo.com/video/775050918?h=4f492c97e5'
-          width='640'
-          height='560'
-          frameborder='0'
-          className='w-full'
-          allow='autoplay; fullscreen'></iframe> */}
       </div>
       <ServicesNav />
       <Footer />

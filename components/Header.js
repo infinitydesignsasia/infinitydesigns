@@ -2,7 +2,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import { MdCelebration } from "react-icons/md";
 import {
   Bars3Icon,
   ShieldCheckIcon,
@@ -12,7 +11,6 @@ import { BiChevronDown, BiShoppingBag } from "react-icons/bi";
 // import { Link } from "react-scroll";
 import Link from "next/link";
 import {
-  FaInstagram,
   FaBaby,
   FaWhatsapp,
   FaConnectdevelop,
@@ -329,7 +327,7 @@ export default function Header() {
                 <FaLinkedinIn />
               </a>
               <a
-                href='#'
+                href='https://wa.me/919899116413'
                 className='whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900'>
                 <FaWhatsapp />
               </a>

@@ -15,7 +15,7 @@ export default function Footer() {
             <span>Get connected with us on social networks:</span>
           </div>
           <div className='flex justify-center'>
-            <a href='#!' className='mr-6 text-black'>
+            <a href='https://wa.me/919899116413' className='mr-6 text-black'>
               <FaWhatsapp />
             </a>
 

@@ -21,7 +21,7 @@ export default function Careers() {
           Having a career for you, become luckier with hard work.
         </p>
       </div>
-      <div className='max-w-7xl mx-auto px-4 sm:px-6 mt-[120px] flex justify-center items-center gap-16 flex-wrap'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 mt-[120px] flex justify-center items-center gap-16 flex-wrap relative'>
         <div className='flex gap-16 flex-wrap items-center justify-center'>
           <div className=''>
             <label className='block'>Select Location</label>
@@ -102,8 +102,15 @@ export default function Careers() {
             Filter
           </button>
         </div>
+        <div className='absolute font-semibold bottom-[-100px] mx-auto text-center left-0 right-0 w-full'>
+          <p className='my-2'>For more information contact</p>
+          <a
+            className='font-bold border-b border-black mb-8'
+            href='mailto:hr@infinitydesigns.co.in'>
+            hr@infinitydesigns.co.in
+          </a>
+        </div>
       </div>
-
       <Footer />
     </div>
   );

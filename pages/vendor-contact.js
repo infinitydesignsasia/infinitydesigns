@@ -22,7 +22,7 @@ export default function Vendor() {
       </div>
       <div className='flex justify-center px-2 lg:px-12 gap-8 mt-[60px] mb-[120px] lg:flex-row flex-col overflow-hidden'>
         <div className='flex flex-col flex-1 items-center'>
-          <video width='640' height='360' controls playsinline autoplay>
+          <video width='640' height='360' controls playsInline autoPlay>
             <source src='/videos/vendor.mp4' type='video/mp4'></source>
           </video>
           {/* <iframe

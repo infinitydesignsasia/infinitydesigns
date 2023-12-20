@@ -15,7 +15,7 @@ export default function Footer() {
             <span>Get connected with us on social networks:</span>
           </div>
           <div className='flex justify-center'>
-            <a href='https://wa.me/7838920406' className='mr-6 text-black'>
+            <a href='https://wa.me/+917838920406' className='mr-6 text-black'>
               <FaWhatsapp />
             </a>
 
@@ -69,7 +69,7 @@ export default function Footer() {
               <div>
                 <h1 className='font-semibold'>Open Hours</h1>
                 <p className='flex items-center justify-center md:justify-start mb-4'>
-                  Mon - Sat: 9:30 am - 6:30 pm <br />
+                  Mon - Sat: 10:00 am - 6:30 pm <br />
                   Sunday: Closed
                 </p>
               </div>

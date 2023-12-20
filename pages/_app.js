@@ -74,7 +74,7 @@ function MyApp({ Component, pageProps }) {
             <span className='hidden group-hover:block absolute whitespace-nowrap bg-[#eee] w-auto px-4 py-1 rounded right-12'>
               Buyer Contact
             </span>
-            <a href='tel:919899116413'>
+            <a href='tel:+917838920406'>
               <IoMdCall className='w-10 h-10 text-blue-600' />
             </a>
           </div>
@@ -82,7 +82,7 @@ function MyApp({ Component, pageProps }) {
             <span className='hidden group-hover:block absolute whitespace-nowrap w-auto bg-[#eee] py-1 px-4 rounded right-12'>
               Buyer Contact
             </span>
-            <a href='https://wa.me/919899116413'>
+            <a href='https://wa.me/+917838920406'>
               <RiWhatsappFill className='w-10 h-10 text-green-800' />
             </a>
           </div>

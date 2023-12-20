@@ -20,7 +20,7 @@ export default function Vendor() {
       </div>
       <div className='max-w-5xl mx-auto px-4 sm:px-6 my-[60px]'>
         <div className='fixed bottom-[250px] mx-auto flex justify-center left-0 right-0 z-30 text-[20px] sm:text-[36px] whitespace-nowrap md:text-[48px] lg:text-[54px] text-red-600 rotate-[-25deg] opacity-60'>
-          Infinity Designs - Do Not Copy
+          Infinity Designs - DO NOT COPY
         </div>
 
         <p className='text-xl my-4'>

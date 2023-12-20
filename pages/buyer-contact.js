@@ -43,7 +43,7 @@ export default function Vendor() {
               </a>
             </button> */}
             <button className='mt-8 bg-[#e8c085] flex justify-center mx-auto gap-1 items-center text-black py-3 px-6 hover:bg-[#e8b871] text-xl rounded-lg'>
-              <a href='https://wa.me/917838920406'>Whatsapp Us</a>
+              <a href='https://wa.me/+917838920406'>Whatsapp Us</a>
             </button>
           </div>
         </div>

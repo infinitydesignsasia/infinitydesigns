@@ -539,7 +539,7 @@ export default function Header() {
         <div className='py-2 flex justify-around animate-marquee whitespace-nowrap'>
           <span className='text-xl mx-4'>Merry Christmas to everyone 🎄</span>
           <span className='text-xl mx-4 flex justify-center items-center'>
-            Happy New Year 2023 🥳
+            Happy New Year 2024 🥳
           </span>
         </div>
       </div>

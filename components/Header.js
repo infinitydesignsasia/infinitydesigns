@@ -327,7 +327,7 @@ export default function Header() {
                 <FaLinkedinIn />
               </a>
               <a
-                href='https://wa.me/919899116413'
+                href='https://wa.me/7838920406'
                 className='whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900'>
                 <FaWhatsapp />
               </a>

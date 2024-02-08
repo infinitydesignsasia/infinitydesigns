@@ -121,7 +121,7 @@ export default function Header() {
           <div className='flex items-center justify-between py-6 md:justify-start md:space-x-10'>
             <div className='flex justify-start lg:w-0 lg:flex-1'>
               <a href='/' className='cursor-pointer'>
-                <span className='sr-only'>Infinity Designssssss</span>
+                <span className='sr-only'>Infinity Designs</span>
                 {/* <h1 className='text-xl whitespace-nowrap font-semibold tracking-wider'>
                 Infinity Designs
               </h1> */}
@@ -213,7 +213,7 @@ export default function Header() {
                         "group inline-flex items-center rounded-md bg-[#F7F5F2] text-base font-semibold hover:text-gray-900 focus:outline-none"
                       )}>
                       <Link href='/#our-products'>
-                        <span>Our Products</span>
+                        <span>Our Productss</span>
                       </Link>
                       <BiChevronDown
                         className={classNames(

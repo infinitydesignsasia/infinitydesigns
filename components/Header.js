@@ -213,7 +213,7 @@ export default function Header() {
                         "group inline-flex items-center rounded-md bg-[#F7F5F2] text-base font-semibold hover:text-gray-900 focus:outline-none"
                       )}>
                       <Link href='/#our-products'>
-                        <span>Our Productss</span>
+                        <span>Our Products</span>
                       </Link>
                       <BiChevronDown
                         className={classNames(

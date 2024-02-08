@@ -121,7 +121,7 @@ export default function Header() {
           <div className='flex items-center justify-between py-6 md:justify-start md:space-x-10'>
             <div className='flex justify-start lg:w-0 lg:flex-1'>
               <a href='/' className='cursor-pointer'>
-                <span className='sr-only'>Infinity Designs</span>
+                <span className='sr-only'>Infinity Designssssss</span>
                 {/* <h1 className='text-xl whitespace-nowrap font-semibold tracking-wider'>
                 Infinity Designs
               </h1> */}

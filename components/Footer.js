@@ -34,7 +34,7 @@ export default function Footer() {
                 alt='logo'
                 className='w-36 mb-4 mx-auto md:mx-0'
               />
-              <p>Clothes for your best movements</p>
+              <p>Apparels for your best movements</p>
             </div>
             <Subscribe />
 
@@ -64,7 +64,7 @@ export default function Footer() {
               </h6>
               <p className='mb-2'>
                 UG16A Ozone Centre, Sector 12 Near district court, Faridabad
-                121007 Haryana India
+                121007 State Haryana Country India
               </p>
               <div>
                 <h1 className='font-semibold'>Open Hours</h1>

@@ -537,11 +537,11 @@ export default function Header() {
       </Popover>
       <div className='overflow-x-hidden bg-[#a34e76] text-white opacity-80 font-bold'>
         <div className='py-2 flex justify-around animate-marquee whitespace-nowrap'>
-          <span className='text-xl mx-4'>Merry Christmas to everyone 🎄</span>
+          <span className='text-xl mx-4'>Bharat Tex 2024 Global Textile Expo</span>
           <span className='text-xl mx-4 flex justify-center items-center'>
-            Happy New Year 2024 🥳
+            Textile Fashion Sustainbility 
           </span>
-        </div>
+        </div
       </div>
     </>
   );

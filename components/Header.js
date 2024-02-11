@@ -539,9 +539,9 @@ export default function Header() {
         <div className='py-2 flex justify-around animate-marquee whitespace-nowrap'>
           <span className='text-xl mx-4'>Bharat Tex 2024 Global Textile Expo </span >
           <span className='text-xl mx-4 flex justify-center items-center'>
-            Textile Fashion Sustainbility 
+            Textile Fashion Sustainbility
           </span>
-        </div
+        </div>
       </div>
     </>
   );

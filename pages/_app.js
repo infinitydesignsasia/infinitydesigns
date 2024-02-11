@@ -5,6 +5,9 @@ import { BiMessageDetail } from "react-icons/bi";
 import { IoMdCall } from "react-icons/io";
 import { RiWhatsappFill } from "react-icons/ri";
 
+import { initGTM } from "../components/Ga";
+import { useRouter } from 'next/router';
+
 function MyApp({ Component, pageProps }) {
   const [hide, setHide] = useState(false);
   const [msg, setMsg] = useState(false);
@@ -23,9 +26,26 @@ function MyApp({ Component, pageProps }) {
     });
   };
 
+  const router = useRouter();
+
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
-  }, []);
+
+    const handleRouteChange = (url) => {
+      window.dataLayer.push({
+        event: 'pageview',
+        page: url,
+      });
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+    initGTM();
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+
+  }, [router.events]);
 
   return (
     <>
@@ -41,7 +61,7 @@ function MyApp({ Component, pageProps }) {
       <div
         data-style='bottomright'
         className='grecaptcha-badge w-[256px] h-[60px] overflow-hidden block fixed bottom-[14px] right-[-186px] hover:z-50 transition-all duration-300 hover:right-0 shadow-lg rounded-sm'>
-        <div class='grecaptcha-logo'>
+        <div className='grecaptcha-logo'>
           <iframe
             title='reCAPTCHA'
             src='https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LevtA4cAAAAAKHdqZis3dPrdLAr4UweAn5k1sXq&amp;co=aHR0cHM6Ly90aGVpbmZpbml0eWJpei5jb206NDQz&amp;hl=en&amp;v=5qcenVbrhOy8zihcc2aHOWD4&amp;size=invisible&amp;cb=p9su4e234xop'
@@ -49,10 +69,10 @@ function MyApp({ Component, pageProps }) {
             height='80'
             role='presentation'
             name='a-aues1j6g7ix5'
-            frameborder='0'
+            frameBorder='0'
             sandbox='allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox'></iframe>
         </div>
-        <div class='grecaptcha-error'></div>
+        <div className='grecaptcha-error'></div>
         <textarea
           id='g-recaptcha-response-100000'
           name='g-recaptcha-response'

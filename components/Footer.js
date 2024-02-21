@@ -79,7 +79,7 @@ export default function Footer() {
 
         <div className='text-center p-6 border-t border-black'>
           <span>© {new Date().getFullYear()} Copyright:</span>{" "}
-          <a className='text-black font-semibold'>Infinity desings</a>
+          <a className='text-black font-semibold'>Infinity designs</a>
         </div>
       </footer>
     </div>

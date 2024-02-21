@@ -28,9 +28,9 @@ export default function Newsletter() {
               Truly Fashionable
             </h1>
             <p className='text-gray-700 text-lg pb-8'>
-              Every day is a fashion show and the world is your runway. So be
-              you! Express the fashion with new clothes, new passion that will
-              talk on your behalf.
+              Turn heads, ignite trends: your brand's fashion journey starts here.
+              From runway to retail: powering your fashion business. 
+              
             </p>
 
             <p className='font-bold pb-8 text-lg md:text-2xl tracking-wide'>

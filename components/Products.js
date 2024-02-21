@@ -45,7 +45,7 @@ export default function Products() {
       <div className='text-center my-16'>
         <h1 className='text-3xl md:text-5xl font-bold'>Our Products</h1>
         <p className='text-black text-lg font-medium my-8'>
-          Clothes that will make you smile.
+          Your vision, our expertise - the perfect fit
         </p>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12'>

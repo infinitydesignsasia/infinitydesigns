@@ -69,7 +69,7 @@ export default function Footer() {
               <div>
                 <h1 className='font-semibold'>Open Hours</h1>
                 <p className='flex items-center justify-center md:justify-start mb-4'>
-                  Mon - Sat: 10:00 am - 6:30 pm <br />
+                  Mon - Sat: 10:00 am - 6:00 pm <br />
                   Sunday: Closed
                 </p>
               </div>
@@ -79,7 +79,7 @@ export default function Footer() {
 
         <div className='text-center p-6 border-t border-black'>
           <span>© {new Date().getFullYear()} Copyright:</span>{" "}
-          <a className='text-black font-semibold'>Infinity Desings</a>
+          <a className='text-black font-semibold'>Infinity desings</a>
         </div>
       </footer>
     </div>

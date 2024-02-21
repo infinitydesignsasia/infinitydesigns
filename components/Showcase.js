@@ -17,8 +17,8 @@ const data = [
     id: 2,
     src: "/images/buyercontact1.JPG",
     category: "Buyer Contact",
-    title:            "Elevate your brands image with our fashion-forward approach",
-    description: 25  "From concept to catwalk we are with you every step of the way",
+    title:     "Elevate your brands image with our fashion-forward approach",
+    description: "From concept to catwalk we are with you every step of the way"
     button: "Let's Connect",
     rev: true,
   },

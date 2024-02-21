@@ -63,8 +63,8 @@ export default function Footer() {
                 Corporate Office
               </h6>
               <p className='mb-2'>
-                UG16A Ozone Centre, Sector 12 Near district court, Faridabad
-                121007 State Haryana Country India
+                UG16A Ozone Centre Sector 12 Faridabad
+                121007 (Haryana) India
               </p>
               <div>
                 <h1 className='font-semibold'>Open Hours</h1>

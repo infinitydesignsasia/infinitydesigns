@@ -6,9 +6,9 @@ const data = [
     src: false,
     category: "About Us",
     idName: "about-us",
-    title: "13.	"Your style evolution starts here, fueled by our passion!",
+    title: "13.	"Your style evolution starts here, fueled by our passion!"
     description:
-      " Infinity designs is a prominent buying agency headquartered in India, collaborating with renowned brands globally to redefine the fashion landscape through innovative B2B partnerships. We specialize in providing comprehensive end-to-end solutions, working closely with our extensive vendor base and esteemed clients to ensure seamless operations from sourcing to logistics. Our services encompass every aspect of the fashion production process, from meticulously sourcing high-quality materials to fostering vendor development and designing visionary collections. With a focus on constant speed and innovation, we strive to set new industry standards in product development, pricing strategies, production, quality control, and logistics management. At Infinity designs, we are committed to revolutionizing the fashion industry through strategic B2B partnerships that drive creativity, efficiency, and excellence. ",
+      "Infinity designs is a prominent buying agency headquartered in India, collaborating with renowned brands globally to redefine the fashion landscape through innovative B2B partnerships. We specialize in providing comprehensive end-to-end solutions, working closely with our extensive vendor base and esteemed clients to ensure seamless operations from sourcing to logistics. Our services encompass every aspect of the fashion production process, from meticulously sourcing high-quality materials to fostering vendor development and designing visionary collections. With a focus on constant speed and innovation, we strive to set new industry standards in product development, pricing strategies, production, quality control, and logistics management. At Infinity designs, we are committed to revolutionizing the fashion industry through strategic B2B partnerships that drive creativity, efficiency, and excellence. ",
     services: true,
     button: "Buyer Contact",
     rev: false,

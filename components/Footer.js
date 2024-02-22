@@ -12,7 +12,7 @@ export default function Footer() {
       <footer className='max-w-7xl mx-auto px-4 sm:px-6 text-center lg:text-left text-black'>
         <div className='flex justify-center items-center lg:justify-between py-6 border-b border-black'>
           <div className='mr-12 hidden lg:block'>
-            <span> Stay connected with us on social media:</span>
+            <span> Stay connected with us on social network:</span>
           </div>
           <div className='flex justify-center'>
             <a href='https://wa.me/+917838920406' className='mr-6 text-black'>

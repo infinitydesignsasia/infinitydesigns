@@ -539,7 +539,7 @@ export default function Header() {
         <div className='py-2 flex justify-around animate-marquee whitespace-nowrap'>
           <span className='text-xl mx-4'>Redefining B2B fashion with every collection </span >
           <span className='text-xl mx-4 flex justify-center items-center'>
-     InnovateCollaborateDominate  
+                                          Innovate.Collaborate.Dominate  
           </span>
         </div>
       </div>

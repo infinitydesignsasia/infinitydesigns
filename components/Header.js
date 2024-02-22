@@ -539,7 +539,7 @@ export default function Header() {
         <div className='py-2 flex justify-around animate-marquee whitespace-nowrap'>
           <span className='text-xl mx-4'></span >
           <span className='text-xl mx-4 flex justify-center items-center'>
-            Innovate. Collaborate. Dominate. Together 
+            Fashion solutions tailored to fit your brands identity
           </span>
         </div>
       </div>

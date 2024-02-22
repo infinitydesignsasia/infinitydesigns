@@ -537,9 +537,9 @@ export default function Header() {
       </Popover>
       <div className='overflow-x-hidden bg-[#a34e76] text-white opacity-80 font-bold'>
         <div className='py-2 flex justify-around animate-marquee whitespace-nowrap'>
-          <span className='text-xl mx-4'>Fashion solutions tailored to fit your brands identity</span >
+          <span className='text-xl mx-4'> Fashion solutions tailored to fit your brands identity</span >
           <span className='text-xl mx-4 flex justify-center items-center'>
-           
+           Innovate.Collaborate.Dominate.Together infashion
           </span>
         </div>
       </div>

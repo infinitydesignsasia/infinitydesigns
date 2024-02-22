@@ -6,7 +6,7 @@ const data = [
     src: false,
     category: "About Us",
     idName: "about-us",
-    title: "We design dreams!",
+    title: "13.	"Your style evolution starts here, fueled by our passion!",
     description:
       "Infinity designs is a buying agency currently based in India, working with leading brands worldwide. We believe in creating end to end solutions and work closely with our vendor base, client's as well with constant speed, innovations in place.",
     services: true,

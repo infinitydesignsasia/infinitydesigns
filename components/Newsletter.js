@@ -29,7 +29,7 @@ export default function Newsletter() {
             </h1>
             <p className='text-gray-700 text-lg pb-8'>
               Turn heads ignite trends: your brands fashion journey starts here.
-              From runway to retail powering your fashion business.
+              #From runway to retail powering your fashion business.
               
             </p>
 

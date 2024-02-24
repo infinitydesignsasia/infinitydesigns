@@ -34,7 +34,7 @@ export default function Footer() {
                 alt='logo'
                 className='w-36 mb-4 mx-auto md:mx-0'
               />
-              <p>Empower your business with trend-setting apparel</p>
+              <p>Fashion solutions tailored to fit your brand's identity </p>
             </div>
             <Subscribe />
 

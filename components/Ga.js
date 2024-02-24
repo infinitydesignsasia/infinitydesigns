@@ -1,12 +1,10 @@
-const GTM_ID = 'G-ZZRSF3BWDH'; // Replace this with your actual GTM ID
+import ReactGA from "react-ga";
 
-export const initGTM = () => {
-  if (typeof window !== 'undefined' && GTM_ID) {
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      window.dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', GTM_ID);
-  }
+export const initGA = () => {
+  ReactGA.initialize("G-ZZRSF3BWDH"); // Replace 'YOUR_TRACKING_ID' with your actual tracking ID
+};
+
+export const logPageView = () => {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
 };

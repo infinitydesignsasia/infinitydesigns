@@ -6,7 +6,7 @@ const data = [
     src: false,
     category: "About Us",
     idName: "about-us",
-    title: "13.	"Your style evolution starts here, fueled by our passion!"
+    title: "Your style evolution starts here, fueled by our passion!",
     description:
       "Infinity designs is a prominent buying agency headquartered in India, collaborating with renowned brands globally to redefine the fashion landscape through innovative B2B partnerships. We specialize in providing comprehensive end-to-end solutions, working closely with our extensive vendor base and esteemed clients to ensure seamless operations from sourcing to logistics. Our services encompass every aspect of the fashion production process, from meticulously sourcing high-quality materials to fostering vendor development and designing visionary collections. With a focus on constant speed and innovation, we strive to set new industry standards in product development, pricing strategies, production, quality control, and logistics management. At Infinity designs, we are committed to revolutionizing the fashion industry through strategic B2B partnerships that drive creativity, efficiency, and excellence. ",
     services: true,
@@ -18,70 +18,73 @@ const data = [
     src: "/images/buyercontact1.JPG",
     category: "Buyer Contact",
     title: "Elevate your brands image with our fashion-forward approach",
-    description: "From concept to catwalk we are with you every step of the way"
+    description:
+      "From concept to catwalk we are with you every step of the way",
     button: "Let's Connect",
     rev: true,
   },
 ];
 export default function Showcase() {
   return (
-    <main className='max-w-7xl mx-auto px-4 sm:px-6 mt-[120px]'>
+    <main className="max-w-7xl mx-auto px-4 sm:px-6 mt-[120px]">
       {data.map((item) => {
         return (
           <section
             key={item.id}
             id={item.idName}
-            className={`flex justify-center md:justify-between items-center flex-wrap mt-32 gap-8 ${
+            className={`flex justify-center md:justify-between items-center flex-wrap mt-32 gap-5 ${
               item.rev ? "flex-row-reverse" : "flex-row"
-            }`}>
-            <div className='w-[400px] lg:w-[568px] box'>
+            }`}
+          >
+            <div className="w-[400px] lg:w-[568px] box">
               {item.src ? (
-                <img src={item.src} alt='' className='w-[400px] lg:w-[568px]' />
+                <img src={item.src} alt="" className="w-[400px] lg:w-[568px]" />
               ) : (
-                <div className='video-background'>
+                <div className="video-background">
                   <video
                     playsInline
-                    width='640'
-                    height='120'
+                    width="640"
+                    height="120"
                     controls
-                    poster='/posters/about.png'>
-                    <source src='/videos/about.mp4' type='video/mp4'></source>
+                    poster="/posters/about.png"
+                  >
+                    <source src="/videos/about.mp4" type="video/mp4"></source>
                   </video>
                 </div>
               )}
             </div>
-            <div className='max-w-xl'>
-              <p className='text-sm md:text-md text-[#a34e76] font-bold tracking-wide uppercase'>
+            <div className="max-w-xl">
+              <p className="text-sm md:text-md text-[#a34e76] font-bold tracking-wide uppercase">
                 {item.category}
               </p>
-              <h1 className='text-[16px] whitespace-nowrap md:text-[20px] lg:text-[30px] font-semibold mt-2 md:leading-[3.2rem]'>
+              <h1 className="text-[16px] md:text-[20px] lg:text-[30px] font-semibold mt-2 md:leading-[3.2rem]">
                 {item.title}
               </h1>
 
-              <p className='w-full block text-[15px] md:text-[19px] leading-8 text-gray-700 mt-5 mb-4'>
+              <p className="w-full block text-[15px] md:text-[19px] leading-8 text-gray-700 mt-5 mb-4">
                 <em>{item.description}</em>
               </p>
 
               {item.rev ? (
-                <p className='font-bold py-3 text-lg md:text-2xl tracking-wide'>
-                  #Passion For Fashion
+                <p className="font-bold py-3 text-lg md:text-2xl tracking-wide">
+                  # Passion for fashion
                 </p>
               ) : (
                 ""
               )}
               {item.services ? (
                 <>
-                  <h3 className='my-4 font-bold text-lg md:text-xl lg:text-2xl'>
+                  <h3 className="my-4 font-bold text-lg md:text-xl lg:text-2xl">
                     Providing Services
                   </h3>
-                  <div className='flex flex-col md:flex-row justify-left md:items-center md:gap-32'>
-                    <ul className='text-md md:text-lg list-square ml-8'>
+                  <div className="flex flex-col md:flex-row justify-left md:items-center md:gap-32">
+                    <ul className="text-md md:text-lg list-square ml-8">
                       <li>Sourcing</li>
                       <li>Vendor Development</li>
                       <li>Designing</li>
                       <li>Product Development</li>
                     </ul>
-                    <ul className='text-md md:text-lg list-square ml-8 md:ml-0'>
+                    <ul className="text-md md:text-lg list-square ml-8 md:ml-0">
                       <li>Pricing</li>
                       <li>Production & Quality</li>
                       <li>Quality Control</li>
@@ -93,8 +96,9 @@ export default function Showcase() {
                 ""
               )}
               <button
-                className={`text-lg bg-[#e8c085] py-2 px-5 md:py-3 md:px-5 text-[#000] font-semibold rounded-lg mt-4 md:mt-8 hover:bg-[#e8b871] mx-auto flex justify-center`}>
-                <a href='/buyer-contact'>{item.button}</a>
+                className={`text-lg bg-[#e8c085] py-2 px-5 md:py-3 md:px-5 text-[#000] font-semibold rounded-lg mt-4 md:mt-8 hover:bg-[#e8b871] mx-auto flex justify-center`}
+              >
+                <a href="/buyer-contact">{item.button}</a>
               </button>
             </div>
           </section>

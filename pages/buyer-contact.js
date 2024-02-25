@@ -33,7 +33,8 @@ export default function Vendor() {
             className='lg:mb-12 w-full'></iframe> */}
           <div className='text-center mt-[50px]'>
             <h1 className='text-4xl font-bold tracking-wider mb-5'>
-              Making Stronger Connections
+              Dive into the world of B2B apparel where tradition meets innovation, making stronger connections and crafting a future of fashion excellence
+
             </h1>
             {/* <button className='mt-8 bg-[#e8c085] flex justify-center mx-auto gap-1 items-center text-white p-2 hover:bg-[#] text-lg rounded-lg'>
               <a

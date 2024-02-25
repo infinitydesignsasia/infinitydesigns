@@ -538,7 +538,7 @@ export default function Header() {
       <div className='overflow-x-hidden bg-[#a34e76] text-white opacity-80 font-bold'>
         <div className='py-2 flex justify-around animate-marquee whitespace-nowrap'>
           <span className='text-xl mx-4'>Redefining B2B fashion with every collection </span >
-          <span className='text-xl mx-4 flex justify-center items-center'>Innovate.Collaborate.Dominate
+          <span className='text-xl mx-4 flex justify-center items-center'>Style innovation meets seamless logistics
                                   
           </span>
         </div>
